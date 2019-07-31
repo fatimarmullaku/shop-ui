@@ -5,14 +5,14 @@
 	"private": true,
 	"author": "UCX",
 	"scripts": {
-		"clean": "./node_modules/gulp/bin/gulp.js clean",
-		"compile": "./node_modules/gulp/bin/gulp.js compile",
-		"icons": "./node_modules/gulp/bin/gulp.js iconfont",
-		"sass": "./node_modules/gulp/bin/gulp.js sass",
-		"scripts": "./node_modules/gulp/bin/gulp.js scripts",
-		"images": "./node_modules/gulp/bin/gulp.js images",
-		"watch": "./node_modules/gulp/bin/gulp.js watch",
-		"default": "./node_modules/gulp/bin/gulp.js default"
+		"clean": "gulp clean",
+		"compile": "gulp compile",
+		"icons": "gulp iconfont",
+		"sass": "gulp sass",
+		"scripts": "gulp scripts",
+		"images": "gulp images",
+		"watch": "gulp watch",
+		"default": "gulp default"
 	},
 	"dependencies": {
 		"browser-sync": "^2.24.6",
