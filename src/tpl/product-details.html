@@ -17,14 +17,16 @@
 
                 <div class="columns">
 
-                    <div class="column">
-                        <i class='far fa-image'></i>
-                        <i class="fa fa-bars"></i>
+                    <div class="column left-actions">
+                        <a href=""><i class='far fa-image'></i></a>
+                        <a href=""><i class="fa fa-star-o"></i></a>
+                        <a href=""><i class='far fa-comment'></i></a>
                     </div>
 
-                    <div class="column">
-
+                    <div class="column right-actions">
+                        <i class='far fa-heart'></i>
                     </div>
+
                 </div>
 
             </div>
@@ -32,11 +34,107 @@
         </div>
 
     </div>
-    <div class="column s-three-fifths">
+    <div class="column is-three-fifths">
         <div class="product-info-panel">
 
+            <div class="product-info-header">
+                <h2>Category</h2>
+            </div>
+
+            <div class="product-info-body">
+                <h3 class="product-name">RED SEAT</h3>
+                <p class="product-description">
+                    This seat is nicely and will fit perfectly in your living room. Lorem ipsum sit dolor amet.
+                    Consecteture adipscing elit. Ut fermentum interdum malesuada. Sed ornare posuere lobortis.
+                    Lasis Ut fermentum interdum malesuada sed ornare
+                </p>
+
+                <div class="product-controls">
+
+                    <div class="product-price">
+                        <div class="heading">
+                            Price
+                        </div>
+
+                        <div class="value">
+                            $65.25
+                        </div>
+                    </div>
+
+                    <div class="product-quantity">
+                        <div class="heading">
+                            Quantity
+                        </div>
+
+                        <div class="control">
+                            <input class="input is-rounded" type="number" value="1">
+                        </div>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <div class="heading is-vhidden">Add to cart</div>
+                        <button class="button big-button cart-button primary-button upper-button rounded is-bold raised is-active gelatine">Add to cart</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product-info-footer">
+
+                <div class="panel-footer">
+                    <div class="footer-inner">
+                        <div class="recommended">Recommended</div>
+                        <!-- Recommended items -->
+                        <div class="columns has-text-centered">
+
+                            <div class="column"></div>
+
+                            <!-- Item -->
+                            <div class="column is-3">
+                                <div class="featured-product">
+                                    <div class="image">
+                                        <img src="assets/img/dark-seat.jpg" alt="">
+                                    </div>
+                                    <div class="product-info has-text-centered">
+                                        <a href="#"><h3 class="product-name">Dark seat</h3></a>
+                                        <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="column is-3">
+                                <div class="featured-product">
+                                    <div class="image">
+                                        <img src="assets/img/blue-seat.png" alt="">
+                                    </div>
+                                    <div class="product-info has-text-centered">
+                                        <a href="#"><h3 class="product-name">Blue seat</h3></a>
+                                        <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="column is-3">
+                                <div class="featured-product">
+                                    <div class="image">
+                                        <img src="assets/img/cosy-red-seat.png" alt="">
+                                    </div>
+                                    <div class="product-info has-text-centered">
+                                        <a href="#"><h3 class="product-name">Red seat</h3></a>
+                                        <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <p>right</p>
+
     </div>
 </div>
 {% endblock %}
