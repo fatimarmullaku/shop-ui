@@ -9,7 +9,7 @@
   cursor: pointer;
 
   &:hover {
-    background: lighten(map_get($ucx-colors, blue), 10%);
+    background: lighten(map-get($ucx-colors, blue), 10%);
   }
 }
 
