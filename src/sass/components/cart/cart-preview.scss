@@ -1,0 +1,42 @@
+.cart-items{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: #e6e6e6;
+  width: auto;
+}
+
+.buttons{
+  margin-left: 20px;
+  margin-top:-40px;
+  display: block;
+}
+
+.qty{
+  width: 30px;
+  display: block;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  border: none;
+  &:hover{
+    color:#0f81cc;
+  }
+}
+
+.product-img{
+  position: relative;
+  padding: 10px 0 0 20px;
+}
+
+.buttons .qty{
+  border-radius: 50%;
+}
+
+.cancels{
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+
+
