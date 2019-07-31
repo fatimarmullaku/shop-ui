@@ -1,0 +1,37 @@
+{
+	"name": "shop-training-ui",
+	"description": "Dashboard frontend modules",
+	"version": "1.0.0",
+	"private": true,
+	"author": "UCX",
+	"scripts": {
+		"clean": "./node_modules/gulp/bin/gulp.js clean",
+		"compile": "./node_modules/gulp/bin/gulp.js compile",
+		"icons": "./node_modules/gulp/bin/gulp.js iconfont",
+		"sass": "./node_modules/gulp/bin/gulp.js sass",
+		"scripts": "./node_modules/gulp/bin/gulp.js scripts",
+		"images": "./node_modules/gulp/bin/gulp.js images",
+		"watch": "./node_modules/gulp/bin/gulp.js watch",
+		"default": "./node_modules/gulp/bin/gulp.js default"
+	},
+	"dependencies": {
+		"browser-sync": "^2.24.6",
+		"bulma": "^0.7.5",
+		"fs": "0.0.1-security",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^5.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-nunjucks": "^4.0.0",
+		"gulp-order": "^1.1.1",
+		"gulp-sass": "^4.0.1",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-uglify": "^3.0.1",
+		"merge-stream": "^1.0.1"
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-pro": "^5.9.0",
+		"del": "^3.0.0",
+		"gulp-iconfont": "^10.0.1",
+		"gulp-iconfont-css": "^2.3.0"
+	}
+}

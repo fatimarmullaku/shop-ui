@@ -1,0 +1,40 @@
+{
+	"build": {
+		"nunjucks": {
+			"src": "src/tpl/*.html",
+			"watch": "src/tpl/**/**.html"
+		},
+		"sass": {
+			"src": "src/sass/**.scss",
+			"watch": "src/sass/**/**.scss",
+			"dist": "/assets/css"
+		},
+		"vendors": {
+			"js": "vendors/js/**.js"
+		},
+		"images": {
+			"src": "src/img/**",
+			"dist": "/assets/img/"
+		},
+		"scripts": {
+			"base": "src/js/",
+			"src": "src/js/*.js",
+			"dist": "/assets/js"
+		},
+		"icons": {
+			"fontName": "ucxicon",
+			"src": "src/icons/*.svg",
+			"dist": "assets/fonts/",
+			"sass": "../../../../src/sass/global/_icons.scss"
+		},
+		"dist": "dist"
+	},
+	"app": {
+		"name": "UCX",
+		"page_title": "UCX",
+		"appCSS": "assets/css/app.css",
+		"appJS": "assets/js/all.min.js",
+		"baseUrl": "#"
+	}
+}
+

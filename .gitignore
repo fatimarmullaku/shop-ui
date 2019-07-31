@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Idea specific
+.idea
+
+# MAC specific
+.DS_STORE
+
+# Build directory
+dist/
+src/sass/global/_icons.scss
