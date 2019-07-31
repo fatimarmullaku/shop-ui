@@ -1,0 +1,25 @@
+.sign-in-button{
+  display: block;
+  font-size: 16px;
+  background: map_get($ucx-colors, blue);
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 700;
+  cursor:pointer;
+  border: none;
+
+  &:hover{
+    background: lighten(map_get($ucx-colors, blue),10%);
+  }
+}
+
+.login-form-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.login-form-footer{
+  text-align: center;
+  margin-top: 50px;
+}

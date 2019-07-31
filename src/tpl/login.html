@@ -1,5 +1,46 @@
 {% extends 'layout/_base.html' %}
 
 {% block content %}
+<div class="columns">
+    <div class="column">
+        {% include 'components/auth/login-intro.html' %}
+    </div>
+    <div class="column">
+        <div class="login-screen">
+            <div class="login-form-header">
+                <img src="assets/img/logo.png" alt="">
+                <h3>Sign in to UCXMarket</h3>
+                <p>Enter your email and password below</p>
+            </div>
 
+            <form action="">
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Username or Email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Password">
+                    </div>
+                </div>
+
+                <div>
+                    <button class="sign-in-button">Sign in</button>
+                </div>
+            </form>
+
+            <div class="login-form-footer">
+                <div class="forgot-password-link">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+
+                <div class="register-account-link">
+                    <p>Don't have an account yet?<a href="register.html">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

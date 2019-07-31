@@ -1,0 +1,66 @@
+{% extends 'layout/_base.html' %}
+
+{% block content %}
+<div class="columns">
+    <div class="column">
+        {% include 'components/auth/login-intro.html' %}
+    </div>
+    <div class="column">
+        <div class="register-screen">
+            <div class="register-form-header">
+                <img src="assets/img/logo.png" alt="">
+                <h3>Create an Account</h3>
+                <p>Sign up to UCXMarket</p>
+            </div>
+
+            <form action="">
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Username">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div>
+                    <button class="sign-up-button">Sign up</button>
+                </div>
+            </form>
+
+            <div class="register-form-footer">
+                <div class="login-link">
+                    <p>Already a member?<a href="login.html">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
