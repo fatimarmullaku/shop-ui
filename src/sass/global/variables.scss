@@ -1,9 +1,18 @@
-$baseFont:'Titillium Web', sans-serif;
+$baseFont: 'Titillium Web', sans-serif;
 
-$body-family:$baseFont;
+$body-family: $baseFont;
 
-$ucx-colors:(
-  blue:#0651a4,
-  green:#40be65,
-  lightGrey:#f5f6f8
-)
+$section-padding: 0;
+
+$ucx-colors: (
+        blue:#0651a4,
+        green:#40be65,
+        lightGrey:#f5f6f8
+);
+
+/*
+    Asset paths
+ */
+$assets: (
+        images: '../img/'
+) !default;
