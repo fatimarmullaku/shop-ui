@@ -1,66 +1,64 @@
 .product-detail-container {
   position: relative;
   margin-top: 10px;
+
+  .product-image-area {
+    position: relative;
+  }
 }
 
 .product-panel {
-  overflow-x: hidden;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   min-height: 100vh;
-  width: 40%;
   background: #fff;
   box-shadow: 2px 0px 2px 0px rgba(0,0,0,0.06);
-  z-index: 1;
-}
 
-.product-panel .panel-header {
-  line-height: 48px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 50px 0;
-  position: relative;
-  z-index: 15;
-}
+  .panel-header {
+    line-height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+  }
 
-.product-view{
-  padding: 25% 0;
-  text-align: center;
-  position: relative;
-}
+  .product-view{
+    padding: 25% 0;
+    text-align: center;
+    position: relative;
 
-.product-view img{
-  max-width: 250px;
+    img{
+      max-width: 250px;
+    }
+  }
 }
 
 .panel-actions{
   padding:10px 40px;
-}
 
-.left-actions a{
-  font-size:20px;
-  color: gray;
-  margin-left: 10px;
+  a{
+    font-size:20px;
+    color: gray;
+    margin-left: 10px;
 
-  &:active{
-    color: #0023ff;
+    &:active{
+      color: #0023ff;
+    }
   }
 }
 
 .right-actions{
   display: flex;
   justify-content: flex-end;
-}
 
-.right-actions i{
-  font-size:25px;
-  color: darkred;
+  i{
+    font-size:25px;
+    color: darkred;
+  }
 }
 
 .product-info-panel {
@@ -81,15 +79,15 @@
   -ms-flex-align: center;
   align-items: center;
   padding: 40px 0;
-}
 
-.product-info-header h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 20px;
-  color: #4a4a4a;
+  h2 {
+    font-family: $titleFont;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 20px;
+    color: #4a4a4a;
+  }
 }
 
 .product-info-body {
@@ -97,7 +95,7 @@
 }
 
 .product-name{
-  font-family: 'Raleway', sans-serif;
+  font-family: $titleFont;
   text-transform: uppercase;
   font-size: 2.2rem;
   font-weight: 500;
