@@ -1,7 +1,9 @@
 {% extends 'layout/_base.html' %}
 
-{% block content %}
+{% block bodyCSS %} grey-background {% endblock %}
 
+{% block content %}
+{% include 'components/general/header.html' %}
 
 <div class="columns columns-menu-wrap">
     <div class="column column-menu is-1">Category</div>
