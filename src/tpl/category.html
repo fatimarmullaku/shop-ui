@@ -1,0 +1,49 @@
+{% extends 'layout/_base.html' %}
+
+{% block bodyCSS %} grey-background {% endblock %}
+
+{% block content %}
+{% include 'components/general/header.html' %}
+
+<div class="columns columns-menu-wrap">
+    <div class="column column-menu is-1">Category</div>
+    <div class="column column-menu is-1">Brands</div>
+</div>
+<hr>
+<div class="columns-wrap is-mobile">
+    <a href="products.html" style="text-decoration: none; color: black;">
+        <div class="column-inner is-one-quarter">
+            <div class="category-img-container">
+                <img src="assets/img/smartphone-svg.jpg" alt="phone pic">
+            </div>
+            <div class="category-name-container">Phones</div>
+        </div>
+    </a>
+    <a href="products.html" style="text-decoration: none; color: black;">
+        <div class="column-inner is-one-quarter">
+            <div class="category-img-container">
+                <img src="assets/img/tablet-svg.jpg" alt="foto">
+            </div>
+            <div class="category-name-container">Tablets</div>
+        </div>
+    </a>
+    <a href="products.html" style="text-decoration: none; color: black;">
+        <div class="column-inner is-one-quarter">
+            <div class="category-img-container">
+                <img src="assets/img/laptop-svg.jpg" alt="foto">
+            </div>
+            <div class="category-name-container">Laptops</div>
+        </div>
+    </a>
+    <a href="products.html" style="text-decoration: none; color: black;">
+        <div class="column-inner is-one-quarter">
+            <div class="category-img-container">
+                <img src="assets/img/desktop-svg.jpg" alt="foto">
+            </div>
+            <div class="category-name-container">Desktop</div>
+        </div>
+    </a>
+</div>
+
+
+{% endblock %}
