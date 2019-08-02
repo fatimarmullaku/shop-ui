@@ -4,7 +4,8 @@
   grid-column-gap: 10px;
   background-color: #fff;
   padding: 30px;
-  margin: 0;
+  //margin: 0;
+  margin: 30px 30px;
 
   .column-menu {
     border: 3px solid transparent;
@@ -12,18 +13,43 @@
     padding: 20px 3px;
     margin: -30px 0;
 
+
     &:hover {
-      border-bottom: 1px solid blue;
+      border-bottom: 3px solid coral;
     }
   }
+
 }
+
 
 .category-container {
   background: #fff;
-  margin: 20px 0;
+  margin: 40px 30px;
   padding: 0 20px;
 
+  #img-nintendo:hover {
+    background-color: red;
+    transition: 1000ms;
+  }
+
+  #img-windows:hover {
+    background-color: dodgerblue;
+    transition: 1000ms;
+  }
+
+  #img-playstation:hover {
+    background-color: blue;
+    transition: 1000ms;
+  }
+
+  #img-xbox:hover {
+    background-color: green;
+    transition: 1000ms;
+  }
+
+
   .category-link {
+    background-color: white;
     border: 1px solid lightgrey;
     display: block;
     text-align: center;
@@ -31,7 +57,22 @@
     color: #000000;
 
     &:hover {
-      border-color: map-get($ucx-colors, blue);
+      //border-color: map-get($ucx-colors, blue);
+      //border: 1.5px solid coral;
+      //background-color: coral;
+    }
+
+    img {
+      width: 230px;
+      height: 230px;
+      padding: 40px;
+
+      &:hover {
+        //height: 275px;
+        //width: 275px;
+        transform: scale(1.2);
+        transition: 1000ms;
+      }
     }
   }
 }
