@@ -9,4 +9,3 @@ node_modules/
 
 # Build directory
 dist/
-src/sass/global/_icons.scss
