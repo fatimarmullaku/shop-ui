@@ -1,167 +1,157 @@
 {% extends 'layout/_base.html' %}
 
 {% block content %}
-<div class="columns">
-    <div class="column is-3">
-        <aside class="menu edit-profile-menu">
-            <p class="menu-label">Profile information</p>
-            <ul class="menu-list">
-                <li><a href="">Account information</a></li>
-                <li><a href="">Order History</a></li>
-            </ul>
-        </aside>
+
+<div class="container">
+    <h1 class="title is-2">Profile Information</h1>
+    <hr>
+
+    <!-- Personal Information starts here -->
+    <h2 class="title is-4">Account information</h2>
+
+    <fieldset disabled>
+        <div class="columns">
+            <div class="column">
+                <label class="label">Email</label>
+                <input type="email" class="input" value="fati.marmullaku@gmail.com">
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <label class="label">Password</label>
+                <input type="password" class="input" value="fati.marmullaku@gmail.com">
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="columns">
+        <div class="column change-account-settings">
+            <button class="button is-danger">Change account settings</button>
+        </div>
     </div>
-    <div class="column">
-        <h1 class="title is-2">Profile Information</h1>
-        <hr>
 
-        <!-- Personal Information starts here -->
-        <h2 class="title is-4">Account information</h2>
+    <hr>
 
-        <fieldset disabled>
-            <div class="columns">
-                <div class="column">
-                    <label class="label">Email</label>
-                    <input type="email" class="input" value="fati.marmullaku@gmail.com">
-                </div>
-            </div>
+    <!-- Personal Information starts here -->
+    <h2 class="title is-4">Personal information</h2>
 
-            <div class="columns">
-                <div class="column">
-                    <label class="label">Password</label>
-                    <input type="password" class="input" value="fati.marmullaku@gmail.com">
-                </div>
-            </div>
-        </fieldset>
-
-        <div class="columns">
-            <div class="column change-account-settings">
-                <button class="button is-danger">Change account settings</button>
-            </div>
+    <div class="columns">
+        <div class="column">
+            <label class="label">First Name</label>
+            <input type="text" class="input" value="Fati">
         </div>
 
-        <hr>
+        <div class="column">
+            <label class="label">Last Name</label>
+            <input type="text" class="input" value="Marmullaku">
+        </div>
+    </div>
 
-        <!-- Personal Information starts here -->
-        <h2 class="title is-4">Personal information</h2>
+    <!--  PHONE NUMBER  -->
+    <div class="columns">
+        <div class="column">
+            <label class="label">Phone number</label>
+            <input type="text" class="input" value="+38344123123123">
+        </div>
+    </div>
+    <!--  END PHONE NUMBER  -->
+    <hr>
 
-        <div class="columns">
-            <div class="column">
-                <label class="label">First Name</label>
-                <input type="text" class="input" value="Fati">
-            </div>
+    <!-- ADDRESSES START HERE -->
+    <h3 class="title is-5">Addresses</h3>
 
-            <div class="column">
-                <label class="label">Last Name</label>
-                <input type="text" class="input" value="Marmullaku">
-            </div>
-
+    <div class="columns">
+        <div class="column">
+            <label class="label">Country</label>
+            <input type="text" class="input" value="Kosovo">
         </div>
 
-        <div class="columns">
-            <div class="column">
-                <label class="label">Phone number</label>
-                <input type="text" class="input" value="+38344123123123">
-            </div>
+        <div class="column">
+            <label class="label">City</label>
+            <input type="text" class="input" value="Prishtina">
         </div>
 
-        <hr>
-
-        <!-- ADDRESSES START HERE -->
-        <h3 class="title is-5">Addresses</h3>
-
-        <div class="columns">
-            <div class="column">
-                <label class="label">Country</label>
-                <input type="text" class="input" value="Kosovo">
-            </div>
-
-            <div class="column">
-                <label class="label">City</label>
-                <input type="text" class="input" value="Prishtina">
-            </div>
-
-            <div class="column">
-                <label class="label">Zip code</label>
-                <input type="text" class="input" value="10000">
-            </div>
-
-            <div class="column">
-                <label class="label">Street</label>
-                <input type="text" class="input" value="Rr. Holger Petersen">
-            </div>
-
-            <div class="column is-1 cancel-button-block">
-            <span class="cancel-button">
-                <button class="delete button is-danger"></button>
-                </span>
-            </div>
+        <div class="column">
+            <label class="label">Zip code</label>
+            <input type="text" class="input" value="10000">
         </div>
 
-        <div class="columns">
-            <div class="column">
-                <label class="label">Country</label>
-                <input type="text" class="input" value="Kosovo">
-            </div>
-
-            <div class="column">
-                <label class="label">City</label>
-                <input type="text" class="input" value="Prishtina">
-            </div>
-
-            <div class="column">
-                <label class="label">Zip code</label>
-                <input type="text" class="input" value="10000">
-            </div>
-
-            <div class="column">
-                <label class="label">Street</label>
-                <input type="text" class="input" value="Rr. Holger Petersen">
-            </div>
-
-            <div class="column is-1 cancel-button-block">
-            <span class="cancel-button">
-                <button class="delete button is-danger"></button>
-                </span>
-            </div>
+        <div class="column">
+            <label class="label">Street</label>
+            <input type="text" class="input" value="Rr. Holger Petersen">
         </div>
 
-        <div class="columns">
-            <div class="column">
-                <label class="label">Country</label>
-                <input type="text" class="input" value="Kosovo">
-            </div>
-
-            <div class="column">
-                <label class="label">City</label>
-                <input type="text" class="input" value="Prishtina">
-            </div>
-
-            <div class="column">
-                <label class="label">Zip code</label>
-                <input type="text" class="input" value="10000">
-            </div>
-
-            <div class="column">
-                <label class="label">Street</label>
-                <input type="text" class="input" value="Rr. Holger Petersen">
-            </div>
-
-            <div class="column is-1 cancel-button-block">
-            <span class="cancel-button">
-                <button class="delete button is-danger"></button>
-                </span>
-            </div>
+        <div class="column is-1 cancel-button-block">
+        <span class="cancel-button">
+            <button class="delete button is-danger"></button>
+            </span>
         </div>
-        <!-- ADDRESSES END HERE -->
-        <!-- Personal Information ends here -->
+    </div>
 
-        <hr>
-
-        <div class="field is-grouped is-grouped-right">
-            <button class="button is-primary">Save</button>
-            <button class="button">Cancel</button>
+    <div class="columns">
+        <div class="column">
+            <label class="label">Country</label>
+            <input type="text" class="input" value="Kosovo">
         </div>
+
+        <div class="column">
+            <label class="label">City</label>
+            <input type="text" class="input" value="Prishtina">
+        </div>
+
+        <div class="column">
+            <label class="label">Zip code</label>
+            <input type="text" class="input" value="10000">
+        </div>
+
+        <div class="column">
+            <label class="label">Street</label>
+            <input type="text" class="input" value="Rr. Holger Petersen">
+        </div>
+
+        <div class="column is-1 cancel-button-block">
+        <span class="cancel-button">
+            <button class="delete button is-danger"></button>
+            </span>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <label class="label">Country</label>
+            <input type="text" class="input" value="Kosovo">
+        </div>
+
+        <div class="column">
+            <label class="label">City</label>
+            <input type="text" class="input" value="Prishtina">
+        </div>
+
+        <div class="column">
+            <label class="label">Zip code</label>
+            <input type="text" class="input" value="10000">
+        </div>
+
+        <div class="column">
+            <label class="label">Street</label>
+            <input type="text" class="input" value="Rr. Holger Petersen">
+        </div>
+
+        <div class="column is-1 cancel-button-block">
+        <span class="cancel-button">
+            <button class="delete button is-danger"></button>
+            </span>
+        </div>
+    </div>
+    <!-- ADDRESSES END HERE -->
+    <!-- Personal Information ends here -->
+
+    <hr>
+
+    <div class="field is-grouped is-grouped-right">
+        <button class="button is-primary">Save</button>
+        <button class="button">Cancel</button>
     </div>
 </div>
 
