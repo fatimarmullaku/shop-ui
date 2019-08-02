@@ -17,6 +17,7 @@
 	"dependencies": {
 		"browser-sync": "^2.24.6",
 		"bulma": "^0.7.5",
+		"connect": "^3.7.0",
 		"fs": "0.0.1-security",
 		"gulp": "^4.0.0",
 		"gulp-autoprefixer": "^5.0.0",
