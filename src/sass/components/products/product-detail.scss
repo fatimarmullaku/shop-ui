@@ -1,238 +1,187 @@
-.product-detail-container {
+.product-details-container {
+  .columns{
+    margin-left: 0;
+    margin-right: 0;
+  }
   position: relative;
   margin-top: 10px;
+  background-color: map_get($ucx-colors, dark);
+  min-height : 93.2vh;
 
-  .product-image-area {
+  .product-panel {
     position: relative;
-  }
-}
+    padding-right: 0;
+    padding-left: 0;
 
-.product-panel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
-  background: #fff;
-  box-shadow: 2px 0px 2px 0px rgba(0,0,0,0.06);
+    .product-panel-wrapper{
+      border: 1px solid map_get($ucx-colors,deep-orange);
+      border-radius: 3px;
 
-  .panel-header {
-    line-height: 48px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 50px 0;
-    position: relative;
-  }
+      .product-view{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
 
-  .product-view{
-    padding: 25% 0;
-    text-align: center;
-    position: relative;
+        img{
+          max-width: 400px;
+        }
+      }
 
-    img{
-      max-width: 250px;
+      .panel-actions{
+        border-top: 1px solid map_get($ucx-colors,deep-orange);
+
+        padding:10px 40px;
+        display: flex;
+        justify-content: space-between;
+
+        a{
+          font-size:20px;
+          color: map_get($ucx-colors, light-gray);
+          margin-left: 10px;
+
+          &:active, :hover{
+            color: map_get($ucx-colors, deep-orange);
+          }
+        }
+
+        .right-actions{
+          display: flex;
+          justify-content: flex-end;
+
+          i{
+            font-size:25px;
+            color: map_get($ucx-colors,light-orange);
+
+            &:hover{
+              color: map_get($ucx-colors,red-orange);
+            }
+          }
+        }
+      }
     }
   }
-}
 
-.panel-actions{
-  padding:10px 40px;
+  .product-info-panel{
+    height: 100%;
+    position: relative;
+    background: map_get($ucx-colors, dark-gray);;
 
-  a{
-    font-size:20px;
-    color: gray;
-    margin-left: 10px;
+    .inner-panel{
+      height: 100%;
 
-    &:active{
-      color: #0023ff;
+      .product-info-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 2px solid map_get($ucx-colors,border-color);
+
+        h2{
+          font-family: $titleFont;
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 0 20px;
+          color: map_get($ucx-colors,orange-yellow);
+        }
+      }
+
+      .product-info-body {
+        padding: 30px 50px;
+
+        .product-name-instock{
+
+          h3{
+            font-family: $titleFont;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: map_get($ucx-colors,deep-orange);
+          }
+
+          h5{
+            color: map_get($ucx-colors,light-orange);
+          }
+        }
+
+        .product-description {
+          padding: 20px 0;
+          color: #999;
+        }
+
+        .product-controls {
+          padding-top: 60px;
+          display: flex;
+          align-items: baseline;
+          justify-content: center;
+          font-family: $titleFont;
+          color: map_get($ucx-colors,light-gray);
+
+          .product-price {
+            position: relative;
+            padding-right: 15px;
+
+            .heading {
+              font-weight: 600;
+              margin: 5px 0;
+            }
+
+            .value {
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: map_get($ucx-colors,deep-orange);
+            }
+          }
+
+          .product-quantity {
+
+            .heading {
+              font-family: 'Raleway', sans-serif;
+              font-weight: 600;
+              margin: 5px 0;
+              text-align: center;
+            }
+
+            .input {
+              text-align: center;
+              background-color: transparent;
+              border-color: map_get($ucx-colors, deep-orange);
+              color: map_get($ucx-colors,light-gray);
+            }
+          }
+
+          .add-to-cart {
+            .heading{
+              margin: 0;
+            }
+
+            .is-vhidden {
+              visibility: hidden !important;
+            }
+
+            .button {
+              line-height: 0;
+              font-size: 0.8rem;
+              font-weight: 600;
+              margin-left: 20px;
+              outline: none;
+              border-color: map_get($ucx-colors, deep-orange);
+              background-color: transparent;
+              color: map_get($ucx-colors,light-gray);
+              transition: all 0.5s;
+              padding: 22px 40px !important;
+              border-radius: 500px;
+
+              &:hover {
+                background-color: map_get($ucx-colors, deep-orange);
+              }
+            }
+          }
+        }
+      }
     }
   }
-}
-
-.right-actions{
-  display: flex;
-  justify-content: flex-end;
-
-  i{
-    font-size:25px;
-    color: darkred;
-  }
-}
-
-.product-info-panel {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  min-height: 100vh;
-  width: 60%;
-  background: #f0f0f0;
-}
-
-.product-info-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 40px 0;
-
-  h2 {
-    font-family: $titleFont;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 0 20px;
-    color: #4a4a4a;
-  }
-}
-
-.product-info-body {
-  padding: 60px 80px;
-}
-
-.product-name{
-  font-family: $titleFont;
-  text-transform: uppercase;
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #0023ff;
-}
-
-.product-description {
-  padding-top: 20px;
-  color: #999;
-}
-
-.product-controls {
-  padding-top: 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.product-price {
-  position: relative;
-}
-
-.heading {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  margin: 5px 0;
-}
-
-.value {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #0023ff;
-}
-
-.product-quantity {
-  margin-left: auto;
-}
-
-.product-quantity .heading {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  margin: 5px 0;
-  text-align: center;
-}
-
-.control .input {
-  text-align: center;
-}
-
-.is-vhidden {
-  visibility: hidden !important;
-}
-
-.add-to-cart .heading {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  margin: 0;
-}
-
-.add-to-cart button {
-  line-height: 0;
-  font-size: 0.6rem;
-  font-weight: 600;
-  margin-left: 20px;
-}
-
-.button.upper-button.is-bold {
-  font-weight: 600 !important;
-}
-.button.big-button.is-bold {
-  font-weight: 600;
-}
-.button.primary-button {
-  outline: none;
-  border-color: #0023ff;
-  background-color: #0023ff;
-  color: #fff !important;
-  transition: all 0.5s;
-}
-.button.rounded {
-  border-radius: 500px;
-}
-.button.upper-button {
-  text-transform: uppercase;
-}
-.button.big-button {
-  padding: 22px 40px !important;
-}
-
-.panel-footer {
-  padding: 35px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  min-height: 250px;
-  z-index: 0;
-}
-
-.panel-footer .footer-inner {
-  padding: 20px 0;
-}
-
-.footer-inner .recommended {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #999;
-  position: absolute;
-  top: 106px;
-  left: -20px;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.product-info-footer .image {
-  display: block;
-  position: relative;
-}
-
-.footer-inner .featured-product .product-name {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  color: #0a0a0a;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.has-text-centered {
-  text-align: center !important;
-}
-
-.product-info-footer .image img {
-  max-width: 80px;
-  margin: 5px auto;
 }
