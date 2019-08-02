@@ -2,7 +2,45 @@
 
 {% block content %}
 <div class="columns">
-    {% include 'components/profile/profile-side-menu.html' %}
+    <div class="column is-3">
+        {% include 'components/profile/profile-side-menu.html' %}
+    </div>
 
+    <div class="column">
+        <div class="column">
+            <h1 class="title">Change email</h1>
+            <hr>
+            <div class="notification is-danger has-icons-left">
+                <p>
+                    <span class="icon is-large is-left">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                    <strong>WARNING: changing your email may have side effects!</strong>
+                </p>
+            </div>
+            <form action="">
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" value="fati.marmullaku@gmail.com">
+                    </div>
+                    <div class="control">
+                        <a class="button is-primary">
+                            Change email
+                        </a>
+                    </div>
+                </div>
+                <div class="field">
+                    <p class="is-info">A verification link will be sent to your email</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="column">
+            <h1 class="title">Change password</h1>
+            <hr>
+            <p class="subtitle">Changing your password can have side effects</p>
+            <button class="button is-danger">Change password</button>
+        </div>
+    </div>
 </div>
 {% endblock %}
