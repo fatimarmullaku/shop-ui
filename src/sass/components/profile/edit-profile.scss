@@ -1,0 +1,14 @@
+.change-account-settings{
+  padding-top: 20px;
+}
+
+.cancel-button-block {
+  position: relative;
+  padding-left: 50px;
+
+  .cancel-button{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+  }
+}

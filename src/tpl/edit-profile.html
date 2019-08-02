@@ -1,7 +1,19 @@
 {% extends 'layout/_base.html' %}
 
 {% block content %}
+{% include 'components/general/header.html' %}
+
 <div class="container">
+
+    <aside class="menu">
+        <p class="menu-label">Profile information</p>
+        <ul class="menu-list">
+            <li><a href="">Account information</a></li>
+            <li><a href="">Order History</a></li>
+        </ul>
+    </aside>
+
+
     <h1 class="title is-2">Profile Information</h1>
     <hr>
 
@@ -24,7 +36,11 @@
         </div>
     </fieldset>
 
-    <button class="button is-danger">Change account settings</button>
+    <div class="columns">
+        <div class="column change-account-settings">
+            <button class="button is-danger">Change account settings</button>
+        </div>
+    </div>
 
     <hr>
 
@@ -76,27 +92,11 @@
             <label class="label">Street</label>
             <input type="text" class="input" value="Rr. Holger Petersen">
         </div>
-    </div>
 
-    <div class="columns">
-        <div class="column">
-            <label class="label">Country</label>
-            <input type="text" class="input" value="Kosovo">
-        </div>
-
-        <div class="column">
-            <label class="label">City</label>
-            <input type="text" class="input" value="Prishtina">
-        </div>
-
-        <div class="column">
-            <label class="label">Zip code</label>
-            <input type="text" class="input" value="10000">
-        </div>
-
-        <div class="column">
-            <label class="label">Street</label>
-            <input type="text" class="input" value="Rr. Holger Petersen">
+        <div class="column is-1 cancel-button-block">
+            <span class="cancel-button">
+                <button class="delete button is-danger"></button>
+                </span>
         </div>
     </div>
 
@@ -119,6 +119,40 @@
         <div class="column">
             <label class="label">Street</label>
             <input type="text" class="input" value="Rr. Holger Petersen">
+        </div>
+
+        <div class="column is-1 cancel-button-block">
+            <span class="cancel-button">
+                <button class="delete button is-danger"></button>
+                </span>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <label class="label">Country</label>
+            <input type="text" class="input" value="Kosovo">
+        </div>
+
+        <div class="column">
+            <label class="label">City</label>
+            <input type="text" class="input" value="Prishtina">
+        </div>
+
+        <div class="column">
+            <label class="label">Zip code</label>
+            <input type="text" class="input" value="10000">
+        </div>
+
+        <div class="column">
+            <label class="label">Street</label>
+            <input type="text" class="input" value="Rr. Holger Petersen">
+        </div>
+
+        <div class="column is-1 cancel-button-block">
+            <span class="cancel-button">
+                <button class="delete button is-danger"></button>
+                </span>
         </div>
     </div>
     <!-- ADDRESSES END HERE -->
