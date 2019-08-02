@@ -2,15 +2,7 @@
 
 {% block content %}
 <div class="columns">
-    <div class="column is-3">
-        <aside class="menu edit-profile-menu">
-            <p class="menu-label">Profile information</p>
-            <ul class="menu-list">
-                <li><a href="">Account information</a></li>
-                <li><a href="">Order History</a></li>
-            </ul>
-        </aside>
-    </div>
+    {% include 'components/profile/profile-side-menu.html' %}
     <div class="column">
         <h1 class="title is-2">Profile Information</h1>
         <hr>
@@ -159,7 +151,7 @@
         <hr>
 
         <div class="field is-grouped is-grouped-right">
-            <button class="button is-primary">Save</button>
+            <button class="button is-primary save-button">Save</button>
             <button class="button">Cancel</button>
         </div>
     </div>
