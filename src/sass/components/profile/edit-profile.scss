@@ -1,4 +1,4 @@
-.change-account-settings{
+.change-account-settings {
   padding-top: 20px;
 }
 
@@ -6,9 +6,27 @@
   position: relative;
   padding-left: 50px;
 
-  .cancel-button{
+  .cancel-button {
     display: block;
     position: absolute;
     bottom: 20px;
+  }
+
+  @include mobile {
+    padding-left: 0;
+    text-align: center;
+
+    .cancel-button {
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+
+.edit-profile-menu {
+  position: fixed;
+
+  @include mobile {
+    position: relative;
   }
 }

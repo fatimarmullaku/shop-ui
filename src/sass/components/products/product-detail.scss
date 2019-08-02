@@ -5,7 +5,7 @@
   }
   position: relative;
   margin-top: 10px;
-  background-color: map_get($ucx-colors, dark);
+  background-color: map-get($ucx-colors, dark);
   min-height : 93.2vh;
 
   .product-panel {
@@ -14,7 +14,7 @@
     padding-left: 0;
 
     .product-panel-wrapper{
-      border: 1px solid map_get($ucx-colors,deep-orange);
+      border: 1px solid map-get($ucx-colors,deep-orange);
       border-radius: 3px;
 
       .product-view{
@@ -31,7 +31,7 @@
       }
 
       .panel-actions{
-        border-top: 1px solid map_get($ucx-colors,deep-orange);
+        border-top: 1px solid map-get($ucx-colors,deep-orange);
 
         padding:10px 40px;
         display: flex;
@@ -39,11 +39,11 @@
 
         a{
           font-size:20px;
-          color: map_get($ucx-colors, light-gray);
+          color: map-get($ucx-colors, light-gray);
           margin-left: 10px;
 
           &:active, :hover{
-            color: map_get($ucx-colors, deep-orange);
+            color: map-get($ucx-colors, deep-orange);
           }
         }
 
@@ -53,10 +53,10 @@
 
           i{
             font-size:25px;
-            color: map_get($ucx-colors,light-orange);
+            color: map-get($ucx-colors,light-orange);
 
             &:hover{
-              color: map_get($ucx-colors,red-orange);
+              color: map-get($ucx-colors,red-orange);
             }
           }
         }
@@ -67,7 +67,7 @@
   .product-info-panel{
     height: 100%;
     position: relative;
-    background: map_get($ucx-colors, dark-gray);;
+    background: map-get($ucx-colors, dark-gray);;
 
     .inner-panel{
       height: 100%;
@@ -77,7 +77,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px 0;
-        border-bottom: 2px solid map_get($ucx-colors,border-color);
+        border-bottom: 2px solid map-get($ucx-colors,border-color);
 
         h2{
           font-family: $titleFont;
@@ -85,7 +85,7 @@
           text-transform: uppercase;
           font-weight: 500;
           padding: 0 20px;
-          color: map_get($ucx-colors,orange-yellow);
+          color: map-get($ucx-colors,orange-yellow);
         }
       }
 
@@ -99,11 +99,11 @@
             text-transform: uppercase;
             font-size: 2.2rem;
             font-weight: 500;
-            color: map_get($ucx-colors,deep-orange);
+            color: map-get($ucx-colors,deep-orange);
           }
 
           h5{
-            color: map_get($ucx-colors,light-orange);
+            color: map-get($ucx-colors,light-orange);
           }
         }
 
@@ -118,7 +118,7 @@
           align-items: baseline;
           justify-content: center;
           font-family: $titleFont;
-          color: map_get($ucx-colors,light-gray);
+          color: map-get($ucx-colors,light-gray);
 
           .product-price {
             position: relative;
@@ -132,7 +132,7 @@
             .value {
               font-size: 1.6rem;
               font-weight: 700;
-              color: map_get($ucx-colors,deep-orange);
+              color: map-get($ucx-colors,deep-orange);
             }
           }
 
@@ -148,8 +148,8 @@
             .input {
               text-align: center;
               background-color: transparent;
-              border-color: map_get($ucx-colors, deep-orange);
-              color: map_get($ucx-colors,light-gray);
+              border-color: map-get($ucx-colors, deep-orange);
+              color: map-get($ucx-colors,light-gray);
             }
           }
 
@@ -168,15 +168,15 @@
               font-weight: 600;
               margin-left: 20px;
               outline: none;
-              border-color: map_get($ucx-colors, deep-orange);
+              border-color: map-get($ucx-colors, deep-orange);
               background-color: transparent;
-              color: map_get($ucx-colors,light-gray);
+              color: map-get($ucx-colors,light-gray);
               transition: all 0.5s;
               padding: 22px 40px !important;
               border-radius: 500px;
 
               &:hover {
-                background-color: map_get($ucx-colors, deep-orange);
+                background-color: map-get($ucx-colors, deep-orange);
               }
             }
           }

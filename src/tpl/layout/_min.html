@@ -12,11 +12,8 @@
     </head>
     <body class="{% block bodyCSS %}{% endblock %}">
         <section class="section">
-            {% include '../components/general/header.html' %}
-            <div class="container">
-                {% block content %}
-                {% endblock %}
-            </div>
+            {% block content %}
+            {% endblock %}
         </section>
     </body>
 </html>

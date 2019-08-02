@@ -61,7 +61,7 @@
 .auth-button {
   display: block;
   font-size: 16px;
-  background: map_get($ucx-colors, blue);
+  background: map-get($ucx-colors, blue);
   width: 100%;
   padding: 10px 0;
   color: #fff;
@@ -71,6 +71,6 @@
   border-radius: 3px;
 
   &:hover {
-    background: lighten(map_get($ucx-colors, blue), 10%);
+    background: lighten(map-get($ucx-colors, blue), 10%);
   }
 }

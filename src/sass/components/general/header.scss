@@ -1,7 +1,7 @@
 .header {
   padding: 15px;
   text-align: center;
-  background-color: map_get($ucx-colors,dark-gray);
+  background-color: map-get($ucx-colors,dark-gray);
   color: white;
   font-size: 20px;
   border: 1px solid black;
@@ -21,14 +21,14 @@
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid map_get($ucx-colors,light-orange);
+  border: 1px solid map-get($ucx-colors,light-orange);
   border-radius: 5px;
   margin: 0px;
   font-size: 14px;
-  color: map_get($ucx-colors,light-orange);
-}
+  color: map-get($ucx-colors,light-orange);
 
-.log-out-button:hover {
-  background: map_get($ucx-colors,light-orange);
-  color: white;
+  &:hover {
+    background: map-get($ucx-colors,light-orange);
+    color: white;
+  }
 }
