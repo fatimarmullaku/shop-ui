@@ -1,15 +1,14 @@
 body {
   background: #ffffff;
   margin: auto 0;
-  padding-bottom: 70px;
 }
 
 @import "header";
 
 .grey-background {
-  background: map_get($ucx-colors,black);
+  background: map-get($ucx-colors, black);
 }
 
-.page-unscrollable{
+.page-unscrollable {
   overflow: hidden;
 }
