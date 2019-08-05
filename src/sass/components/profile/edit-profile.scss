@@ -23,14 +23,41 @@
   }
 }
 
-.edit-profile-menu {
-  position: fixed;
-
-  @include mobile {
-    position: relative;
-  }
-}
-
 .save-button {
   margin-right: 20px;
 }
+
+.static-titles {
+  color: map-get($ucx-colors, light-orange);
+}
+
+.side-menu {
+  min-height: 100vh;
+  background: map-get($ucx-colors, dark-gray);
+
+  .edit-profile-menu {
+    position: fixed;
+
+  ul {
+    border-color: map-get($ucx-colors, light-orange);
+    a {
+      color: map-get($ucx-colors, light-orange);
+
+      &:hover {
+        border: 1px solid map-get($ucx-colors, light-orange);
+        background: map-get($ucx-colors, light-orange);
+        color: white;
+      }
+    }
+  }
+
+    @include mobile {
+      position: relative;
+    }
+  }
+}
+
+/*
+body {
+  background: linear-gradient(135deg, rgb(21, 70, 45),rgb(177, 24, 19),rgb(203, 214, 34));
+}*/
