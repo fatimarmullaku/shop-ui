@@ -3,7 +3,46 @@
 {% block content %}
 <div class="columns">
     {% include 'components/profile/profile-side-menu.html' %}
-
-
-</div>
-{% endblock %}
+    <h1><strong>Your Order History</strong></h1>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="notification">
+            <!--        This container is <strong>centered </strong> on desktop-->
+            <div class="columns">
+                <div class="column cart-items is-11">
+                    <div class="columns is-vcentered">
+                        <div class="column is-2">
+                            <div class="product-img">
+                                <img src="assets/img/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <h3><strong>Title </strong></h3>
+                            <p>Product brand</p>
+                        </div>
+                        <div class="column is-2">
+                            <h2><strong>Price </strong></h2>
+                            <p>XX.XX$</p>
+                        </div>
+                        <div class="column is-2">
+                            <br>
+                            <h2><strong>Quantity:</strong></h2>
+                            <p>XX</p>
+                        </div>
+                        <div class="column is-2">
+                            <h3><strong>Purchase Date: </strong></h3>
+                            <p>XX/XX/XXXX</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown">Dropdown</button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    {% endblock %}
