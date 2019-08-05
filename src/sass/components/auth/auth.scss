@@ -1,6 +1,7 @@
 .auth-intro {
   text-align: center;
-  background: url(asset(images, 'signin_signup_bg.jpg')) center center no-repeat;
+  //background: url(asset(images, 'signin_signup_bg.jpg')) center center no-repeat;
+  background: linear-gradient(0deg, rgba(117, 117, 117, 0.01) 0%, rgba(117, 117, 117, 0.01) 1%,rgba(235, 235, 235, 0.01) 1%, rgba(235, 235, 235, 0.01) 6%,rgba(196, 196, 196, 0.01) 6%, rgba(196, 196, 196, 0.01) 18%,rgba(209, 209, 209, 0.01) 18%, rgba(209, 209, 209, 0.01) 53%,rgba(196, 196, 196, 0.01) 53%, rgba(196, 196, 196, 0.01) 94%,rgba(223, 223, 223, 0.01) 94%, rgba(223, 223, 223, 0.01) 100%),linear-gradient(45deg, rgba(168, 168, 168, 0.05) 0%, rgba(168, 168, 168, 0.05) 6%,rgba(124, 124, 124, 0.05) 6%, rgba(124, 124, 124, 0.05) 20%,rgba(136, 136, 136, 0.05) 20%, rgba(136, 136, 136, 0.05) 23%,rgba(217, 217, 217, 0.05) 23%, rgba(217, 217, 217, 0.05) 24%,rgba(46, 46, 46, 0.05) 24%, rgba(46, 46, 46, 0.05) 71%,rgba(155, 155, 155, 0.05) 71%, rgba(155, 155, 155, 0.05) 100%),linear-gradient(135deg, rgba(73, 73, 73, 0.08) 0%, rgba(73, 73, 73, 0.08) 20%,rgba(235, 235, 235, 0.08) 20%, rgba(235, 235, 235, 0.08) 53%,rgba(69, 69, 69, 0.08) 53%, rgba(69, 69, 69, 0.08) 61%,rgba(104, 104, 104, 0.08) 61%, rgba(104, 104, 104, 0.08) 100%),linear-gradient(0deg, rgba(9, 9, 9, 0.01) 0%, rgba(9, 9, 9, 0.01) 1%,rgba(240, 240, 240, 0.01) 1%, rgba(240, 240, 240, 0.01) 6%,rgba(235, 235, 235, 0.01) 6%, rgba(235, 235, 235, 0.01) 7%,rgba(235, 235, 235, 0.01) 7%, rgba(235, 235, 235, 0.01) 56%,rgba(32, 32, 32, 0.01) 56%, rgba(32, 32, 32, 0.01) 68%,rgba(33, 33, 33, 0.01) 68%, rgba(33, 33, 33, 0.01) 71%,rgba(190, 190, 190, 0.01) 71%, rgba(190, 190, 190, 0.01) 81%,rgba(209, 209, 209, 0.01) 81%, rgba(209, 209, 209, 0.01) 100%),linear-gradient(0deg, rgba(50, 50, 50, 0.02) 0%, rgba(50, 50, 50, 0.02) 10%,rgba(2, 2, 2, 0.02) 10%, rgba(2, 2, 2, 0.02) 14%,rgba(27, 27, 27, 0.02) 14%, rgba(27, 27, 27, 0.02) 23%,rgba(22, 22, 22, 0.02) 23%, rgba(22, 22, 22, 0.02) 25%,rgba(252, 252, 252, 0.02) 25%, rgba(252, 252, 252, 0.02) 36%,rgba(82, 82, 82, 0.02) 36%, rgba(82, 82, 82, 0.02) 61%,rgba(168, 168, 168, 0.02) 61%, rgba(168, 168, 168, 0.02) 96%,rgba(255, 255, 255, 0.02) 96%, rgba(255, 255, 255, 0.02) 100%),linear-gradient(90deg, rgb(226, 92, 33),rgb(28, 37, 18));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,30 +48,40 @@
     margin-top: 30px;
     font-weight: 600;
     text-align: center;
-    color: #6c757d;
+    color: map_get($ucx-colors,deep-orange);
     font-size: 1.5rem;
   }
 
   span {
     font-size: 16px;
-    color: #929ea8;
+    color: map_get($ucx-colors,deep-orange);
     text-align: center;
   }
-}
 
+}
 .auth-button {
   display: block;
   font-size: 16px;
-  background: map-get($ucx-colors, blue);
+  //background: map-get($ucx-colors, blue);
+  background: transparent;
+  border: 1px solid map_get($ucx-colors,deep-orange);
   width: 100%;
   padding: 10px 0;
   color: #fff;
-  font-weight: 700;
+  font-weight: 300;
   cursor: pointer;
-  border: none;
   border-radius: 3px;
 
   &:hover {
-    background: lighten(map-get($ucx-colors, blue), 10%);
+    background: map-get($ucx-colors, deep-orange);
   }
+}
+.login-screen{
+  background-color: map_get($ucx-colors,dark-gray);
+}
+.register-screen{
+  background-color: map_get($ucx-colors,dark-gray);
+}
+.paragraph{
+  color: map_get($ucx-colors,deep-orange);
 }
