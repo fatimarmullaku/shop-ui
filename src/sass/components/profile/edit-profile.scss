@@ -28,6 +28,14 @@
 }
 
 .static-titles {
+  color: map-get($ucx-colors, deep-orange);
+}
+
+.main-content {
+  background: map-get($ucx-colors, dark-gray);
+}
+
+.columns label {
   color: map-get($ucx-colors, light-orange);
 }
 
