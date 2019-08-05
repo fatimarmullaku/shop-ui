@@ -4,5 +4,33 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+
+  h2 {
+    color:map-get($ucx-colors,light-orange);
+  }
+  h3 {
+    color:map-get($ucx-colors,light-orange);
+  }
 }
 
+
+label.checkout-label {
+
+  color:map-get($ucx-colors,light-orange);
+}
+
+.nav-buttons-shipping {
+
+  background: transparent;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #ec7f37;
+  border-radius: 5px;
+  margin: 0px;
+  font-size: 14px;
+  color: #ec7f37; }
+.log-out-button:hover {
+  background: #ec7f37;
+  color: white;
+}
