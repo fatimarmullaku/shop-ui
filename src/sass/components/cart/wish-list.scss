@@ -15,26 +15,27 @@ body{
     font-size: 25px;
     color: map_get($ucx-colors,deep-orange);
   }
+  .wishlist-button-container{
+    .wishlist-button {
+      line-height: 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 0px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      outline: none;
+      border-color: map-get($ucx-colors, deep-orange);
+      background-color: transparent;
+      color: map-get($ucx-colors, light-gray);
+      transition: all 0.5s;
+      padding: 22px 40px;
+      border-radius: 500px;
+      cursor: pointer;
 
-  .wishlist-button {
-    line-height: 0;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    outline: none;
-    border-color: map-get($ucx-colors, deep-orange);
-    background-color: transparent;
-    color: map-get($ucx-colors, light-gray);
-    transition: all 0.5s;
-    padding: 22px 40px;
-    border-radius: 500px;
-    cursor: pointer;
-    &:hover {
-      background-color: map-get($ucx-colors, deep-orange);
+      &:hover {
+        background-color: map-get($ucx-colors, deep-orange);
+      }
     }
-
 
   }
 }
