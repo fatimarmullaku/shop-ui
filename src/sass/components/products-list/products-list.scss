@@ -58,6 +58,43 @@
 }
 
 
+.filter {
+  .static-filter {
+    height: 100%;
+    overflow-x: hidden;
+    border-right: solid 1px;
+    border-right-color: map-get($ucx-colors, border-color);
+    margin-top: 10px;
+    position: fixed;
+
+    .dropdown {
+      display: inline-block;
+      width: 100%;
+
+      .dropdown-content {
+        display: none;
+        padding: 12px 16px;
+      }
+
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
+    .dropdown-trigger {
+      position: relative;
+
+      .button {
+        position: relative;
+        border: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+
 
 
 
