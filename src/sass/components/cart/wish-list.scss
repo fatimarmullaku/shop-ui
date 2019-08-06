@@ -1,52 +1,62 @@
-body{
+body {
   background: #000;
-  min-height: 3000px;
 }
+
 .main-box {
-  border: 1px solid map_get($ucx-colors,deep-orange);
-  background: map_get($ucx-colors,dark-gray);
+  border: 1px solid map_get($ucx-colors, deep-orange);
+  background: map_get($ucx-colors, dark-gray);
   margin-top: 30px;
   margin-bottom: 30px;
-  .inner-box{
-    background: map_get($ucx-colors,dark-gray);
-    border: 1px solid map_get($ucx-colors,deep-orange);
-    color: map_get($ucx-colors,deep-orange);
-    .game-information{
-      max-height: 110px;
-      min-height: 110px;
+
+  .inner-box {
+    background: map_get($ucx-colors, dark-gray);
+    border: 1px solid map_get($ucx-colors, deep-orange);
+    color: map_get($ucx-colors, deep-orange);
+
+    @include mobile {
+      .wish-list-featured-image {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+      }
     }
   }
+
   h1 {
     font-size: 25px;
-    color: map_get($ucx-colors,deep-orange);
+    color: map_get($ucx-colors, deep-orange);
   }
 
-  .wishlist-button {
-    line-height: 0;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    outline: none;
-    border-color: map-get($ucx-colors, deep-orange);
-    background-color: transparent;
-    color: map-get($ucx-colors, light-gray);
-    transition: all 0.5s;
-    padding: 22px 40px;
-    border-radius: 500px;
-    cursor: pointer;
-    &:hover {
-      background-color: map-get($ucx-colors, deep-orange);
+  .wishlist-button-container {
+    .wishlist-button {
+      line-height: 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-left: 0px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      outline: none;
+      border-color: map-get($ucx-colors, deep-orange);
+      background-color: transparent;
+      color: map-get($ucx-colors, light-gray);
+      transition: all 0.5s;
+      padding: 22px 40px;
+      border-radius: 500px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: map-get($ucx-colors, deep-orange);
+      }
     }
 
-
   }
 }
-.wishlist-button-container{
+
+.wishlist-button-container {
   align-items: baseline;
 }
-.remove-button{
+
+.remove-button {
   line-height: 0;
   font-size: 1rem;
   font-weight: 600;
@@ -61,7 +71,8 @@ body{
   padding: 7px 10px;
   border-radius: 500px;
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     background-color: map-get($ucx-colors, deep-orange);
   }
 }

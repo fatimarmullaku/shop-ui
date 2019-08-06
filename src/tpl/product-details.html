@@ -1,11 +1,8 @@
 {% extends 'layout/_min.html' %}
 
-{% block bodyCSS %} page-unscrollable {% endblock %}
-
 {% block content %}
-{% include 'components/general/header.html' %}
-
 <div class="product-details-container">
+    {% include 'components/general/header.html' %}
 
     <div class="columns">
 
@@ -19,9 +16,8 @@
                 <div class="panel-actions">
 
                     <div class="left-actions">
-                        <a href=""><i class='far fa-image'></i></a>
-                        <a href=""><i class="fa fa-star-o"></i></a>
-                        <a href=""><i class='far fa-comment'></i></a>
+                        <a href="product-details.html"><i class='far fa-image'></i></a>
+                        <a href="product-review.html"><i class="fa fa-star-o"></i></a>
                     </div>
 
                     <div class="right-actions">
