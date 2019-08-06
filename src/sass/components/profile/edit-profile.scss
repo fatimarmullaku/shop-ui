@@ -28,11 +28,18 @@
 }
 
 .static-titles {
+  color: map-get($ucx-colors, deep-orange);
+}
+
+.main-content {
+  background: map-get($ucx-colors, dark-gray);
+}
+
+.columns label {
   color: map-get($ucx-colors, light-orange);
 }
 
 .side-menu {
-  min-height: 100vh;
   background: map-get($ucx-colors, dark-gray);
 
   .edit-profile-menu {
