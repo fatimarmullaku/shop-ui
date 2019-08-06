@@ -1,48 +1,93 @@
 {% extends 'layout/_base.html' %}
 
 {% block content %}
+
 <div class="columns">
-    {% include 'components/profile/profile-side-menu.html' %}
-    <h1><strong>Your Order History</strong></h1>
-    <hr>
-    <br>
+    <div class="column is-2">
+        {% include 'components/profile/profile-side-menu.html' %}
+    </div>
+    <div class="column main-content">
+        <p class="title is-2 static-titles">Order History</p>
+        <hr>
     <div class="container">
         <div class="notification">
             <!--        This container is <strong>centered </strong> on desktop-->
             <div class="columns">
                 <div class="column cart-items is-11">
                     <div class="columns is-vcentered">
-                        <div class="column is-2">
-                            <div class="product-img">
-                                <img src="assets/img/logo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="column is-3">
-                            <h3><strong>Title </strong></h3>
-                            <p>Product brand</p>
-                        </div>
-                        <div class="column is-2">
-                            <h2><strong>Price </strong></h2>
-                            <p>XX.XX$</p>
-                        </div>
-                        <div class="column is-2">
-                            <br>
-                            <h2><strong>Quantity:</strong></h2>
-                            <p>XX</p>
-                        </div>
-                        <div class="column is-2">
+                        <div class="column is-4">
                             <h3><strong>Purchase Date: </strong></h3>
                             <p>XX/XX/XXXX</p>
                         </div>
-                        <div class="dropdown">
-                            <button class="dropdown">Dropdown</button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                        <div class="column is-4">
+                            <h3><strong>Product Quantity: </strong></h3>
+                            <p>XX</p>
+                        </div>
+                        <div class="column is-4">
+                            <h3><strong>Paid: </strong></h3>
+                            <p>XX.XX$</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="media">
+                            <div class="media-left is-12-mobile">
+                                <img src="assets/img/mk11-cover.jfif" height="216px" width="161px">
+                            </div>
+                            <div class="media-content mobil">
+                                <div class="game-information">
+                                    <h1 class="title is-3">Mortal Kombat 11</h1>
+                                    <p>Platform:Play Station 4</p>
+                                    <br>
+                                    <p>Quantity: 1</p>
+                                </div>
+                                <br>
+                                <h1>Price: 59.99 $</h1>
+                                <div class="orderhistory-button-container">
+                                    <button class="orderhistory-button">Go to product page</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left is-12-mobile">
+                                <img src="assets\img\My-Cart\second-version\2.png" height="216px" width="161px">
+                            </div>
+                            <div class="media-content mobil">
+                                <div class="game-information">
+                                    <h1 class="title is-3">Metro Exodus</h1>
+                                    <p>Platform:Play Station 4</p>
+                                    <br>
+                                    <p>Quantity: 1</p>
+                                </div>
+                                <br>
+                                <h1>Price: 59.99 $</h1>
+                                <div class="orderhistory-button-container">
+                                    <button class="orderhistory-button">Go to product page</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left is-12-mobile">
+                                <img src="assets\img\My-Cart\second-version\3.png" height="216px" width="161px">
+                            </div>
+                            <div class="media-content mobil">
+                                <div class="game-information">
+                                    <h1 class="title is-3">God of War(2018)</h1>
+                                    <p>Platform:Play Station 4</p>
+                                    <br>
+                                    <p>Quantity: 1</p>
+                                </div>
+                                <br>
+                                <h1>Price: 39.99 $</h1>
+                                <div class="orderhistory-button-container">
+                                    <button class="orderhistory-button">Go to product page</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    </div>
-                    {% endblock %}
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
