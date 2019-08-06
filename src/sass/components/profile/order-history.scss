@@ -1,17 +1,73 @@
 body{
   background: #000;
 }
-.cart-items {
-  border: 1px solid map_get($ucx-colors,deep-orange);
-  background: map_get($ucx-colors,dark-gray);
-  margin-top: 30px;
-  margin-bottom: 30px;
-  .inner-box{
-    background: map_get($ucx-colors,dark-gray);
-    border: 1px solid map_get($ucx-colors,deep-orange);
-    color: map_get($ucx-colors,deep-orange);
+
+.main-content{
+  border: 1px solid map_get($ucx-colors, deep-orange);
+  border-radius: 6px;
+  margin:0 auto;
+
+  .order-history-screen{
+    .history-items {
+      background-color: map_get($ucx-colors, dark-gray);
+      margin-bottom: 30px;
+      .purchase-info{
+        background-color: map-get($ucx-colors, deep-orange);
+        font-family: $baseFont;
+        font-size: 1.2rem;
+        text-align: center;
+        color: map_get($ucx-colors, dark);
+      }
+
+      .inner-box {
+        background: map_get($ucx-colors, dark-gray);
+        border: 1px solid map_get($ucx-colors, deep-orange);
+        color: map_get($ucx-colors, deep-orange);
+      }
+      .media-wrapper{
+        .media{
+          border: 1px solid map_get($ucx-colors, deep-orange);
+          border-radius: 6px;
+          padding: 10px;
+          .image-left{
+            img{
+              height:250px;
+              width:auto;
+            }
+          }
+          .media-content{
+
+            h1{
+              color: map_get($ucx-colors, deep-orange);
+            }
+            .game-information{
+              p{
+                color: map-get($ucx-colors,light-gray);
+              }
+            }
+            .order-history-button-container{
+              .order-history-button{
+                line-height: 0;
+                font-size: 0.8rem;
+                font-weight: 600;
+                margin-top: 20px;
+                outline: none;
+                border-color: map-get($ucx-colors, deep-orange);
+                background-color: transparent;
+                color: map-get($ucx-colors,light-gray);
+                transition: all 0.5s;
+                padding: 20px 40px;
+                border-radius: 500px;
+
+                &:hover {
+                  background-color: map-get($ucx-colors, deep-orange);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  h1 {
-    font-size: 25px;
-    color: map_get($ucx-colors,deep-orange);
-  }
+
+}
