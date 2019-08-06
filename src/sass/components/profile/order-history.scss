@@ -1,0 +1,17 @@
+body{
+  background: #000;
+}
+.cart-items {
+  border: 1px solid map_get($ucx-colors,deep-orange);
+  background: map_get($ucx-colors,dark-gray);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .inner-box{
+    background: map_get($ucx-colors,dark-gray);
+    border: 1px solid map_get($ucx-colors,deep-orange);
+    color: map_get($ucx-colors,deep-orange);
+  }
+  h1 {
+    font-size: 25px;
+    color: map_get($ucx-colors,deep-orange);
+  }
