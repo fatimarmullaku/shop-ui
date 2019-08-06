@@ -11,14 +11,18 @@ body{
     .history-items {
       background-color: map_get($ucx-colors, dark-gray);
       margin-bottom: 30px;
-      .purchase-info{
-        background-color: map-get($ucx-colors, deep-orange);
-        font-family: $baseFont;
-        font-size: 1.2rem;
-        text-align: center;
-        color: map_get($ucx-colors, dark);
-      }
 
+      .purchase-info-wrapper{
+        background: rgb(255,126,63);
+        background: linear-gradient(90deg, rgba(255,126,63,0.5755251929873512) 0%, rgba(255,90,9,0.7884103470489758) 50%, rgba(255,126,63,1) 100%);
+
+        .purchase-info{
+          font-family: $baseFont;
+          font-size: 1.2rem;
+          text-align: center;
+          color: map_get($ucx-colors, dark);
+        }
+      }
       .inner-box {
         background: map_get($ucx-colors, dark-gray);
         border: 1px solid map_get($ucx-colors, deep-orange);
