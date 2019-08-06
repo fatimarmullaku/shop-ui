@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
-
+  padding-left:25px;
+  padding-right:25px;
   h2 {
     color:map-get($ucx-colors,light-orange);
   }
@@ -25,12 +26,40 @@ label.checkout-label {
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid #ec7f37;
+  border: 1px solid map-get($ucx-colors,light-orange);
   border-radius: 5px;
   margin: 0px;
   font-size: 14px;
-  color: #ec7f37; }
-.log-out-button:hover {
-  background: #ec7f37;
-  color: white;
+  color: map-get($ucx-colors,light-orange);
+
+
+  &:hover {
+    background: map-get($ucx-colors,light-orange);
+    color: white;
+    border-color:transparent !important;
+  }
 }
+
+
+.shipping-form-container {
+padding:1vh;
+}
+
+.shipping-image{
+  height:40vh;
+  width:auto;
+}
+
+#shipping-select-country {
+  min-width:300px;
+}
+
+.shipping-address-form {
+
+
+  input {
+
+   min-width:300px;
+  }
+}
+
