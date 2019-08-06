@@ -47,15 +47,15 @@
       width: 100px;
     }
 
-    .menus {
+  }
+
+  .header-middle-side {
+    display: flex;
+
+    nav {
       display: flex;
       justify-content: space-between;
-      flex-direction: row;
-
-      nav {
-        display: flex;
-        justify-content: space-between;
-      }
+      align-items: center;
     }
   }
 
