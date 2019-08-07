@@ -1,73 +1,67 @@
 {% extends 'layout/_base.html' %}
 
 {% block content %}
-<div class="shop-wrapper">
+<div class="container">
+    <div class="checkout-steps">
+        <div class="step-buttons no-hover">
+            <a href="cart-preview.html" class="button is-rounded is-hovered">1</a>
+            <a href="checkout.html" class="button is-rounded is-hovered">2</a>
+            <a href="#" class="button is-rounded is-hovered">3</a>
+            <a href="#" class="button is-rounded is-hovered">4</a>
+        </div>
+    </div>
+    <div class="sub-info">
+        <div class="columns is-mobile">
+            <div class="column is-6-desktop is-6-mobile ">
+                <h1>CHECKOUT</h1>
+            </div>
+            <div class="column is-6-desktop is-6-mobile has-text-right">
+                <h1>Order-42319</h1>
+            </div>
+        </div>
+    </div>
 
-    <div class="section">
+    <!--  Profile and info      -->
+    <div class="main-container">
+        <div class="columns is-mobile">
+            <div class="column is-6-desktop is-12-mobile profile">
+                <div class="profile-info">
 
-        <div class="container">
+                        <img src="assets/img/scorpion.jpg" alt="profile-img" class="is-rounded">
 
-            <div class="notification columns">
-
-                <div class="column is-10 is-offset-1 checkout-wrapper is-tablet-landscape-padded">
-
-                    <div class="checkout-title level">
-                        <div class="chekout level-right">
-                            <h1 class="title"><strong>Checkout</strong></h1>
-                        </div>
-
-                        <div class="level-left order-title">
-                            <h1>
-                                <stron>ORDER:XXXX</stron>
-                            </h1>
-                        </div>
-                        <hr>
-                        <br>
+                    <h3>Checkout as</h3>
+                    <h3>Andi Hoxha</h3>
+                    <a href="#">Switch account?</a>
+                </div>
+            </div>
+            <!--  Personal info   -->
+            <div class="column is-6-desktop is-12-mobile profile-additional-info">
+                <div class="profile-inputs">
+                    <div class="control">
+                        <label class="checkout-label">First Name</label>
+                        <input type="text" class="input" placeholder value="First Name">
                     </div>
-
-                    <div class="flat-card is-auto is-checkout-form">
-                        <div class="columns is-gapless is-vcentered ">
-                            <div class="column is-6 has-text-centered grey-column is-padded">
-                                <div class="customer-wrapper">
-                                    <img src="assets/img/logo.png" alt="">
-                                    <h2>Customer name</h2>
-                                    <div class="switch">
-                                        <a href="#">Switch account?</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="column is-6 is-padded">
-                                <div class="control">
-                                    <label class="checkout-label">First Name</label>
-                                    <input type="text" class="input" placeholder value="First Name">
-                                </div>
-
-                                <div class="control">
-                                    <label class="checkout-label">Last Name</label>
-                                    <input type="text" class="input" placeholder value="Last Name">
-                                </div>
-
-                                <div class="control">
-                                    <label class="checkout-label">Email</label>
-                                    <input type="text" class="input" placeholder value="Email address">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="control">
+                        <label class="checkout-label">Last Name</label>
+                        <input type="text" class="input" placeholder value="Last Name">
                     </div>
-
-                    <div class="button-wrapper has-text-right level">
-                        <a href="#" class="button feather-button is-small primary-button upper-button-raised level-left">
-                            <span>CANCEL</span>
-                        </a>
-                        <a href="#" class="button feather-button is-small primary-button upper-button-raised level-right">
-                            <span>NEXT</span>
-                        </a>
+                    <div class="control">
+                        <label class="checkout-label">Email</label>
+                        <input type="text" class="input" placeholder value="Email address">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!--  Back and Next buttons    -->
+        <div class="columns back-next-buttons">
+            <div class="column is-6-desktop is-6-mobile left-button">
+                <a href="products-list.html" class="button ">Cancel</a>
+            </div>
+            <div class="column is-6-desktop is-6-mobile right-button">
+                <a href="#" class="button ">Next</a>
+            </div>
+        </div>
+</div>
 {% endblock %}
