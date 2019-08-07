@@ -42,7 +42,7 @@ label.checkout-label {
 
 
 .shipping-form-container {
-padding:1vh;
+  padding:1vh;
 }
 
 .shipping-image{
@@ -59,7 +59,12 @@ padding:1vh;
 
   input {
 
-   min-width:300px;
+    min-width:100px;
+  }
+
+  #shipping-select-country{
+    min-width:100px;
+
   }
 }
 
