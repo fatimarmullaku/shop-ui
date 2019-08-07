@@ -25,7 +25,9 @@
   .mySlides {
     height: 500px;
     position: relative;
-    margin-bottom: 80px;
+    @include mobile{
+      margin-bottom: 80px;
+    }
     .image-slider{
       width: 1000px;height:500px;
     }
