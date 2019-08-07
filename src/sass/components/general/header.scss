@@ -1,4 +1,4 @@
-.header {
+/*.header {
   padding: 15px;
   text-align: center;
   background-color: map-get($ucx-colors, dark-gray);
@@ -20,7 +20,7 @@
     height: 110%;
     width: 200px;
   }
-}
+}*/
 
 .log-out-button {
   background: transparent;
@@ -37,7 +37,7 @@
   }
 }
 
-.header2 {
+/*.header2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,14 +64,41 @@
     }
   }
 
+}*/
+
+.header {
+  flex-direction: column;
+  .header-top {
+    height: 80px;
+    border-bottom: 2px solid green;
+    align-items: center;
+
+    .image-container {
+      .header-logo {
+        height: 100%;
+        width: 250px;
+      }
+
+    }
+
+    .header-middle-side {
+      padding: 20px;
+    }
+
+    .header-right-side {
+      padding-right: 10px;
+    }
+
+  }
+
 }
 
+/* HELPER CLASSES BELOW: */
 
-
-
-
-
-
-.flex-dp{
+.uses-flex {
   display: flex;
+}
+
+.between-space {
+  justify-content: space-between;
 }

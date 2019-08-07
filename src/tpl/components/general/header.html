@@ -11,49 +11,61 @@
     <div class="image-container"><img src="{{imageSRC}}ucx-white-logo.svg" alt="logo" class="header-logo"></div>
 </div>-->
 
-<div class="header2 container is-fluid">
-    <div class="header-left-side">
+<div class="header uses-flex">
 
-        <div class="image-logo">
-            <img src="{{imageSRC}}ucx-white-logo.svg" alt="">
+    <!-- HEADER TOP STARTS HERE -->
+    <div class="header-top uses-flex between-space">
+
+        <div class="image-container">
+            <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">
         </div>
 
-    </div>
-
-    <div class="header-middle-side">
-        <div class="menus">
-            <nav>
-                <a href="">
-                    <p>test</p>
-                </a>
-
-                <a href="">
-                    <p>test</p>
-                </a>
-
-                <a href="">
-                    <p>test</p>
-                </a>
-
-                <a href="">
-                    <p>test</p>
-                </a>
-
-                <a href="">
-                    <p>test</p>
-                </a>
-            </nav>
-        </div>
-    </div>
-
-    <div class="header-right-side">
         <div class="auth-buttons">
-            <button class="log-out-button">
-                Sign Up
-            </button>
-            <button class="log-out-button">
-                Log in
-            </button>
+            <button class="log-out-button">Sign up</button>
+            <button class="log-out-button">Login</button>
         </div>
+
     </div>
+    <!-- HEADER TOP ENDS HERE -->
+
+    <!-- HEADER BOTTOM STARTS HERE -->
+    <div class="header-bottom">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <a href="index.html" class="navbar-item">Home</a>
+
+            <a href="" class="navbar-item">Menu 1</a>
+
+            <a href="" class="navbar-item">Menu 2</a>
+
+            <a href="" class="navbar-item">Menu 3</a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+    </div>
+
+        </nav>
+
+    </div>
+    <!-- HEADER BOTTOM ENDS HERE -->
+
 </div>
