@@ -14,7 +14,7 @@
     padding-right: 0;
     padding-left: 0;
     height: 100%;
-    max-height: calc(100vh - 150px);
+    max-height: calc(100vh - 130px);
 
     .product-panel-wrapper{
       border: 1px solid map-get($ucx-colors,deep-orange);
@@ -26,9 +26,10 @@
         align-items: center;
         text-align: center;
         position: relative;
+        height: calc(100vh - 250px);
 
         img{
-          max-width: 400px;
+          max-width: 300px;
         }
 
         .review-panel{
