@@ -32,6 +32,10 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
+
+    .column.is-6-mobile{
+      flex-direction: column;
+    }
   }
 }
 
@@ -81,5 +85,13 @@
 
 .back-next-buttons{
   margin-top: 15px;
+}
+
+.step-buttons a:first-child{
+  background-color: #f1f1f1;
+}
+
+.step-buttons a{
+    margin-right: 15px;
 }
 
