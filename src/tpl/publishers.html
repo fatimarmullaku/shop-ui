@@ -1,0 +1,63 @@
+{% extends 'layout/_base.html' %}
+
+{% block bodyCSS %} grey-background {% endblock %}
+
+{% block content %}
+<div class="columns columns-menu-wrap">
+    <div class="column column-menu is-1">Platforms</div>
+    <div class="column column-menu is-1">Publishers</div>
+</div>
+
+<div class="publisher-container">
+    <div class="columns is-3-desktop is-mobile is-multiline">
+        <div class="column is-6-mobile">
+            <a id="img1" href="login.html" class="publisher-link">
+                <span class="publisher-icon">
+                    <img class="bandai" src="{{imageSRC}}bandai.png" alt="">
+                </span><br>
+                <span class="publisher-title">BANDAI</span>
+            </a>
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+            <a id="img2" href="login.html" class="publisher-link">
+                <span class="publisher-icon">
+                    <img class="img2" src="{{imageSRC}}capcom.png" alt="">
+                </span><br>
+                <span class="publisher-title">CAPCOM</span>
+            </a>
+        </div>
+        <div class="column is-3-desktop is-6-mobile">
+            <a id="img3" href="login.html" class="publisher-link">
+                <span class="publisher-icon">
+                    <img class="img3" src="{{imageSRC}}electronicarts.png" alt="">
+                </span><br>
+                <span class="publisher-title">ELECTRONIC ARTS</span>
+            </a>
+        </div>
+        <div class="column is-3-desktop is-6-mobile ">
+            <a id="img4" href="login.html" class="publisher-link">
+                <span class="publisher-icon">
+                    <img class="img4" src="{{imageSRC}}enix.png" alt="">
+                </span><br>
+                <span class="publisher-title">ENIX</span>
+            </a>
+        </div>
+        <div class="column is-3-desktop is-6-mobile ">
+            <a id="img5" href="login.html" class="publisher-link">
+                <span class="publisher-icon">
+                    <img class="img5" src="{{imageSRC}}enix.png" alt="">
+                </span><br>
+                <span class="publisher-title">ENIX</span>
+            </a>
+        </div>
+        <div class="column is-3-desktop is-6-mobile ">
+            <a id="img6" href="login.html" class="publisher-link">
+                <span class="publisher-icon">
+                    <img class="img6" src="{{imageSRC}}bandai.png" alt="">
+                </span><br>
+                <span class="publisher-title">BANDAI</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
