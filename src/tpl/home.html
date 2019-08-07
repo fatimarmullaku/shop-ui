@@ -10,8 +10,9 @@
 
 <div class="slideshow-container">
     <div class="mySlides fade">
-        <img class="image-slider" src="assets/img/mk11-slider.jfif">
-        <div class="game-information-container">
+        <img class="image-slider is-hidden-mobile" src="assets/img/mk11-slider.jfif">
+        <img class="image-slider-mobile is-hidden-desktop" src="assets/img/mk11-slider-mobile.jpg" style="opacity: 0.3">
+        <div class="game-information-container is-block-mobile">
             <h1>Mortal Kombat 11</h1>
             <hr class="hr">
             <p>Publishers: Netherealm Studios</p>
@@ -20,7 +21,8 @@
         </div>
     </div>
     <div class="mySlides fade">
-        <img class="image-slider" src="assets/img/bf4-slider.jpg">
+        <img class="image-slider is-hidden-mobile" src="assets/img/bf4-slider.jpg">
+        <img class="image-slider-mobile is-hidden-desktop" src="assets/img/bf4-slider-mobile.jpg" style="opacity: 0.3">
         <div class="game-information-container">
             <h1>Battlefield 4</h1>
             <hr class="hr">
@@ -30,7 +32,8 @@
         </div>
     </div>
     <div class="mySlides fade">
-        <img class="image-slider" src="assets/img/minecraft-slider.jpeg">
+        <img class="image-slider is-hidden-mobile" src="assets/img/minecraft-slider.jpeg">
+        <img class="image-slider-mobile is-hidden-desktop" src="assets/img/minecraft-slider-mobile.jpg" style="opacity: 0.3">
         <div class="game-information-container">
             <h1>Minecraft</h1>
             <hr style="color: white">
@@ -40,7 +43,8 @@
         </div>
     </div>
     <div class="mySlides fade">
-        <img class="image-slider" src="assets/img/rdr2-slider.png">
+        <img class="image-slider is-hidden-mobile" src="assets/img/rdr2-slider.png">
+        <img class="image-slider-mobile is-hidden-desktop" src="assets/img/rdr2-slider-mobile.png" style="opacity: 0.3">
         <div class="game-information-container">
             <h1>Red Dead Redemption 2</h1>
             <hr class="hr">
@@ -54,7 +58,7 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
-<div style="text-align:center" class="dots">
+<div style="text-align:center" class="dots is-hidden-mobile">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
@@ -80,8 +84,12 @@
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -92,29 +100,21 @@
         dots[slideIndex-1].className += " active";
     }
 </script>
-<script>
-
-
-    $(document).ready(function(){
-        $(".slideshow-container").mouseenter(function(){
-            $(".game-information-container").fadeIn("slow");
-            $(".image-slider").animate({
-                opacity : 0.3
-            }, "slow")
+<script >
+     $(document).ready(function(){
+            $(".slideshow-container").mouseenter(function(){
+                $(".game-information-container").fadeIn("slow");
+                $(".image-slider").animate({
+                    opacity : 0.3
+                }, "slow")
+            });
+            $(".slideshow-container").mouseleave(function(){
+                $(".image-slider").animate({
+                    opacity : 1
+                },"slow");
+                $(".game-information-container").fadeOut("slow");
+            });
         });
-        $(".slideshow-container").mouseleave(function(){
-            $(".image-slider").animate({
-                opacity : 1
-            },"slow");
-            $(".game-information-container").fadeOut("slow");
-        });
-    });
-
-
-
-
-
-
 </script>
 
 {% endblock %}
