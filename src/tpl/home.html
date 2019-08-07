@@ -1,0 +1,92 @@
+{% extends 'layout/_base.html' %}
+
+{% block content %}
+<h1 id="welcome-message">Welcome to UCX Gaming</h1>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img class="image-slider" src="assets/img/mk11-slider.jfif">
+        <div class="game-information-container">
+            <h1>Mortal Kombat 11</h1>
+            <hr class="hr">
+            <p>Publishers: Netherealm studios</p>
+            <p>Platforms: Xbox One, Play Station 4, PC</p>
+            <p>Price: 59.99$</p>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <img class="image-slider" src="assets/img/bf4-slider.jpg">
+        <div class="game-information-container">
+            <h1>Battlefield 4</h1>
+            <hr class="hr">
+            <p>Publishers: DICE</p>
+            <p>Platforms: Xbox One, Play Station 4, PC</p>
+            <p>Price: 19.99$</p>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <img class="image-slider" src="assets/img/minecraft-slider.jpeg">
+        <div class="game-information-container">
+            <h1>Minecraft</h1>
+            <hr style="color: white">
+            <p>Publishers: Microsoft, Mojang</p>
+            <p>Platforms: Xbox One, Play Station 4, PC</p>
+            <p>Price: 29.99$</p>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <img class="image-slider" src="assets/img/mkx-slider.jpg">
+        <div class="game-information-container">
+            <h1>Mortal Kombat X</h1>
+            <hr class="hr">
+            <p>Publishers: Netherealm studios</p>
+            <p>Platforms: Xbox One, Play Station 4, PC</p>
+            <p>Price: 19.99$</p>
+        </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center" class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!--JAVA SCRIPT-->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+
+{% endblock %}
