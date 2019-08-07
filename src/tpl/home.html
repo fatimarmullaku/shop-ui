@@ -1,7 +1,12 @@
 {% extends 'layout/_base.html' %}
 
 {% block content %}
-<h1 id="welcome-message">Welcome to UCX Gaming</h1>
+<div class="welcome-message-container">
+    <p id="welcome-message">
+        <strong style="color: white">MORTAL KOMBAT 11 </strong>
+        EVERY BATTLE DEFINES YOU. Available now...
+    </p>
+</div>
 
 <div class="slideshow-container">
     <div class="mySlides fade">
@@ -9,7 +14,7 @@
         <div class="game-information-container">
             <h1>Mortal Kombat 11</h1>
             <hr class="hr">
-            <p>Publishers: Netherealm studios</p>
+            <p>Publishers: Netherealm Studios</p>
             <p>Platforms: Xbox One, Play Station 4, PC</p>
             <p>Price: 59.99$</p>
         </div>
@@ -35,13 +40,13 @@
         </div>
     </div>
     <div class="mySlides fade">
-        <img class="image-slider" src="assets/img/mkx-slider.jpg">
+        <img class="image-slider" src="assets/img/rdr2-slider.png">
         <div class="game-information-container">
-            <h1>Mortal Kombat X</h1>
+            <h1>Red Dead Redemption 2</h1>
             <hr class="hr">
-            <p>Publishers: Netherealm studios</p>
-            <p>Platforms: Xbox One, Play Station 4, PC</p>
-            <p>Price: 19.99$</p>
+            <p>Publishers: Rockstar Games</p>
+            <p>Platforms: Xbox One, Play Station 4</p>
+            <p>Price: 59.99$</p>
         </div>
     </div>
 
@@ -87,6 +92,29 @@
         dots[slideIndex-1].className += " active";
     }
 </script>
+<script>
 
+
+    $(document).ready(function(){
+        $(".slideshow-container").mouseenter(function(){
+            $(".game-information-container").fadeIn("slow");
+            $(".image-slider").animate({
+                opacity : 0.3
+            }, "slow")
+        });
+        $(".slideshow-container").mouseleave(function(){
+            $(".image-slider").animate({
+                opacity : 1
+            },"slow");
+            $(".game-information-container").fadeOut("slow");
+        });
+    });
+
+
+
+
+
+
+</script>
 
 {% endblock %}
