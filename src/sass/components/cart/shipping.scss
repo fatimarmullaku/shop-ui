@@ -64,7 +64,7 @@ label.checkout-label {
 
   #shipping-select-country{
     min-width:100px;
-
+max-width:100% ;
   }
 }
 
@@ -75,4 +75,10 @@ label.checkout-label {
   padding: 40px;
   border: 2px solid #FF5A09;
   border-radius: 10px;
+}
+
+.shipping-nav-buttons {
+  a {margin-left:10px;
+    margin-right:10px;}
+
 }
