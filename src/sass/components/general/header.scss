@@ -91,6 +91,23 @@
 
   }
 
+  .header-bottom {
+    justify-content: center;
+    .nav-test {
+      flex-grow: 2;
+      display: flex;
+      justify-content: center;
+
+      a {
+        margin-right: 30px;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
 }
 
 /* HELPER CLASSES BELOW: */
