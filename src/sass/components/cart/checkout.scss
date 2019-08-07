@@ -32,6 +32,10 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
+
+    .column.is-6-mobile{
+      flex-direction: column;
+    }
   }
 }
 
@@ -88,5 +92,6 @@
 }
 
 .step-buttons a{
-  margin-right: 15px;
+    margin-right: 15px;
 }
+
