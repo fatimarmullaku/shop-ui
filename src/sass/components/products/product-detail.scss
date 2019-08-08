@@ -2,7 +2,7 @@
 .product-details-container {
   position: relative;
   background-color: map-get($ucx-colors, dark);
-  min-height: 100vh;
+  min-height: calc(100vh - 140px);
 
   .columns{
     margin-left: 0;
