@@ -1,27 +1,3 @@
-/*.header {
-  padding: 15px;
-  text-align: center;
-  background-color: map-get($ucx-colors, dark-gray);
-  color: white;
-  font-size: 20px;
-  border: 1px solid black;
-  height: 65px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
-
-  .header-logo {
-    ////height: 100%;
-    //margin-top: -15px;
-    ////height:   50px;
-    ////width: 100px;
-    //width: 50%;
-    height: 110%;
-    width: 200px;
-  }
-}*/
-
 .log-out-button {
   background: transparent;
   padding: 5px 10px;
@@ -37,37 +13,9 @@
   }
 }
 
-/*.header2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-
-  .header-left-side {
-    display: flex;
-    justify-content: space-between;
-
-    .image-logo {
-      height: 100%;
-      width: 100px;
-    }
-
-  }
-
-  .header-middle-side {
-    display: flex;
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-}*/
-
 .header {
   flex-direction: column;
+
   .header-top {
     height: 80px;
     border-bottom: 2px solid green;
@@ -93,18 +41,44 @@
 
   .header-bottom {
     justify-content: center;
-    .nav-test {
-      flex-grow: 2;
-      display: flex;
-      justify-content: center;
+
+    @include mobile {
+      height: calc(100vh - 80px);
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 80px;
 
       a {
-        margin-right: 30px;
+        display: block;
       }
+    }
+  }
 
-      a:last-child {
-        margin-right: 0;
+  .hamburger-menu-container {
+    margin-right: 15px;
+
+    button {
+      outline: none !important;
+      cursor: pointer;
+      font-size: 18px;
+      background: none;
+      border: none;
+      color: #fff;
+
+      i:before {
+        content: "\f0c9";
       }
+    }
+  }
+
+  &.active {
+    .header-bottom {
+      display: block;
+    }
+
+    .hamburger-menu-container i:before {
+      content: "\f00d";
     }
   }
 

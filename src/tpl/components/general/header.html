@@ -1,16 +1,3 @@
-<!--<div class="header">
-    <div class="image-container">
-        <img class="header-logo" src="{{imageSRC}}logo-ucx-wix.png" alt="logo">
-    </div>
-    <div>
-        <a href="" class="log-out-button">Log Out</a>
-    </div>
-</div>-->
-
-<!--<div class="header">
-    <div class="image-container"><img src="{{imageSRC}}ucx-white-logo.svg" alt="logo" class="header-logo"></div>
-</div>-->
-
 <div class="header uses-flex">
 
     <!-- HEADER TOP STARTS HERE -->
@@ -20,9 +7,15 @@
             <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">
         </div>
 
-        <div class="auth-buttons">
+        <div class="auth-buttons is-hidden-mobile">
             <button class="log-out-button">Sign up</button>
             <button class="log-out-button">Login</button>
+        </div>
+
+        <div class="hamburger-menu-container is-hidden-tablet">
+            <button>
+                <i class="fa"></i>
+            </button>
         </div>
 
     </div>
@@ -31,7 +24,10 @@
     <!-- HEADER BOTTOM STARTS HERE -->
     <div class="header-bottom uses-flex">
 
-        <nav class="navbar nav-test" role="navigation" aria-label="main navigation">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+            <a href="" class="is-hidden-tablet">Sign up</a>
+            <a href="" class="is-hidden-tablet">Login</a>
 
             <a href="index.html" class="navbar-item">Home</a>
 
