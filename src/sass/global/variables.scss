@@ -1,5 +1,6 @@
 $baseFont: 'Titillium Web', sans-serif;
 $titleFont: 'Raleway', sans-serif;
+$homeFont: 'Bahnschrift Regular';
 
 $body-family: $baseFont;
 
@@ -29,5 +30,6 @@ $ucx-colors: (
     Asset paths
  */
 $assets: (
-        images: '../img/'
+        images: '../img/',
+        fonts: '../fonts/',
 ) !default;
