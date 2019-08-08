@@ -62,7 +62,7 @@ label.checkout-label {
 
   #shipping-select-country{
     min-width:100px;
-max-width:100% ;
+    max-width:100% ;
   }
 }
 
@@ -82,13 +82,13 @@ max-width:100% ;
 }
 
 #existing-address-form {
+  select {width: 100%;}
 
-background:red;
 }
 
 #use-my-address {
   margin-left:0;
   margin-right:0;
   background:yellow;
-  
+
 }
