@@ -1,0 +1,137 @@
+{% extends 'layout/_base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="checkout-steps">
+        <div class="step-buttons no-hover">
+            <a href="checkout.html" class="button is-rounded is-hovered">1</a>
+            <a href="shipping.html" class="button is-rounded is-hovered">2</a>
+            <a href="verification.html" class="button is-rounded is-hovered">3</a>
+            <a href="payment-methods.html" class="button is-rounded is-hovered">4</a>
+        </div>
+    </div>
+
+    <div class="sub-info">
+        <div class="columns is-mobile">
+            <div class="column is-6-desktop is-6-mobile ">
+                <h1>VERIFICATION</h1>
+            </div>
+            <div class="column is-6-desktop is-6-mobile has-text-right">
+                <h1>Order-696969</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-4-desktop is-12-mobile shipping-parent">
+                <div class="shipping-total">
+                    <i class="fa fa-credit-card"></i>
+                    <h3>ORDER TOTAL</h3>
+                    <h2>342,20$</h2>
+                    <h3>3 Products Ordered</h3>
+                </div>
+            </div>
+
+            <div class="column is-8-desktop is-12-mobile shipping-parent-infos">
+                <div class="columns is-mobile shipping-infos">
+                    <div class="column is-6-desktop is-6-mobile">
+                        <div class="shipping-delivery-content">
+                            <span>
+                                <h3>Shipping</h3>
+                            </span>
+                            <span>
+                               <h5>Delivery</h5>
+                           </span>
+                        </div>
+                    </div>
+                    <div class="column is-3-desktop is-3-mobile">
+                        <div class="quantity">
+                            <span>
+                                <h3>QTY</h3>
+                            </span>
+                            <span>
+                                <h5>1</h5>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column is-3-desktop is-3-mobile">
+                        <div class="order-price">
+                            <span>
+                                <h5>FREE</h5>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile shipping-infos">
+                    <div class="column is-6-desktop is-6-mobile">
+                        <div class="shipping-delivery-content">
+                            <span>
+                                <h3>Shipping</h3>
+                            </span>
+                            <span>
+                               <h5>Delivery</h5>
+                           </span>
+                        </div>
+                    </div>
+                    <div class="column is-3-desktop is-3-mobile">
+                        <div class="quantity">
+                            <span>
+                                <h3>QTY</h3>
+                            </span>
+                            <span>
+                                <h5>1</h5>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column is-3-desktop is-3-mobile">
+                        <div class="order-price">
+                            <span>
+                                <h5>FREE</h5>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-mobile shipping-infos">
+                    <div class="column is-6-desktop is-6-mobile">
+                        <div class="shipping-delivery-content">
+                            <span>
+                                <h3>Shipping</h3>
+                            </span>
+                            <span>
+                               <h5>Delivery</h5>
+                           </span>
+                        </div>
+                    </div>
+                    <div class="column is-3-desktop is-3-mobile">
+                        <div class="quantity">
+                            <span>
+                                <h3>QTY</h3>
+                            </span>
+                            <span>
+                                <h5>1</h5>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column is-3-desktop is-3-mobile">
+                        <div class="order-price">
+                            <span>
+                                <h5>FREE</h5>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns back-next-buttons is-mobile">
+        <div class="column is-6-desktop is-6-mobile left-button">
+            <a href="checkout.html" class="button ">Previous</a>
+        </div>
+        <div class="column is-6-desktop is-6-mobile right-button">
+            <a href="payment-methods.html" class="button ">Next</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

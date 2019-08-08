@@ -1,5 +1,5 @@
 {% extends 'layout/_base.html' %}
-
+{% block containerCSS  %} is-fluid {% endblock %}
 {% block content %}
 
 <div class="columns">
@@ -15,17 +15,21 @@
                 <div class="columns history-items">
                     <div class="column is-12">
                         <div class="columns is-12 is-vcentered purchase-info-wrapper">
-                            <div class="column is-4 purchase-info">
+                            <div class="column is-3 purchase-info">
                                 <h3>Purchase Date:</h3>
                                 <p>XX/XX/XXXX</p>
                             </div>
-                            <div class="column is-4 purchase-info">
+                            <div class="column is-3 purchase-info">
                                 <h3>Product Quantity:</h3>
                                 <p>XX</p>
                             </div>
-                            <div class="column is-4 purchase-info">
+                            <div class="column is-3 purchase-info">
                                 <h3>Paid:</h3>
                                 <p>XX.XX$</p>
+                            </div>
+
+                            <div class="column is-3 purchase-info dropdown-button">
+                                <i class='fas fa-angle-double-down'></i>
                             </div>
                         </div>
                         <div class="column media-wrapper">

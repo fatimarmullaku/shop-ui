@@ -5,7 +5,10 @@ body{
 .main-content{
   border: 1px solid map_get($ucx-colors, deep-orange);
   border-radius: 6px;
-  margin:0 auto;
+
+  p{
+    color: map-get($ucx-colors,light-orange);
+  }
 
   .order-history-screen{
     .history-items {
@@ -20,7 +23,9 @@ body{
           font-family: $baseFont;
           font-size: 1.2rem;
           text-align: center;
-          color: map_get($ucx-colors, dark);
+          p, i, h3{
+            color: map_get($ucx-colors, dark);
+          }
         }
       }
       .inner-box {

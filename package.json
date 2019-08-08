@@ -11,6 +11,7 @@
 		"sass": "gulp sass",
 		"scripts": "gulp scripts",
 		"images": "gulp images",
+		"fonts": "gulp fonts:copy",
 		"watch": "gulp watch",
 		"default": "gulp default"
 	},
