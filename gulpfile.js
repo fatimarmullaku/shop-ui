@@ -75,6 +75,11 @@ gulp.task('images', function () {
 // 		.pipe(gulp.dest(config.build.dist + config.build.vendors.dist));
 // });
 
+gulp.task('fonts:copy', function () {
+	return gulp.src(config.build.fonts.src)
+		.pipe(gulp.dest(config.build.dist + config.build.fonts.dist));
+});
+
 /**
  * Convert svg icons to font
  */

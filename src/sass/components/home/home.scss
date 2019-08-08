@@ -7,7 +7,7 @@
     margin: 10px;
   }
   #welcome-message{
-    font-family: Bahnschrift;
+    font-family: $homeFont;
     margin: 20px 0;
     font-size: 60px;
     color: map_get($ucx-colors, deep-orange);
