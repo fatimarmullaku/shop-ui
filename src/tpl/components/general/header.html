@@ -1,8 +1,68 @@
-<div class="header">
-    <div class="image-container">
-        <img class="header-logo" src="{{imageSRC}}ucx-white-logo.svg" alt="logo">
+<div class="header uses-flex">
+
+    <!-- HEADER TOP STARTS HERE -->
+    <div class="header-top uses-flex between-space">
+
+        <div class="image-container">
+            <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">
+        </div>
+
+        <div class="auth-buttons is-hidden-mobile">
+            <button class="log-out-button">Sign up</button>
+            <button class="log-out-button">Login</button>
+        </div>
+
+        <div class="hamburger-menu-container is-hidden-tablet">
+            <button>
+                <i class="fa"></i>
+            </button>
+        </div>
+
     </div>
-    <div>
-        <a href="" class="log-out-button">Log Out</a>
+    <!-- HEADER TOP ENDS HERE -->
+
+    <!-- HEADER BOTTOM STARTS HERE -->
+    <div class="header-bottom uses-flex">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+            <a href="" class="is-hidden-tablet">Sign up</a>
+            <a href="" class="is-hidden-tablet">Login</a>
+
+            <a href="index.html" class="navbar-item">Home</a>
+
+            <a href="" class="navbar-item">Menu 1</a>
+
+            <a href="" class="navbar-item">Menu 2</a>
+
+            <a href="" class="navbar-item">Menu 3</a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
+        </nav>
     </div>
+
+
+</div>
+<!-- HEADER BOTTOM ENDS HERE -->
+
 </div>

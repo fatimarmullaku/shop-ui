@@ -12,6 +12,10 @@
 		"vendors": {
 			"js": "vendors/js/**.js"
 		},
+		"fonts": {
+			"src": "src/fonts/*",
+			"dist": "/assets/fonts/"
+		},
 		"images": {
 			"src": "src/img/**",
 			"dist": "/assets/img/"
