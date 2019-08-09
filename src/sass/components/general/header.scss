@@ -1,14 +1,14 @@
 .log-out-button {
   background: transparent;
   padding: 5px 10px;
-  border: 1px solid map-get($ucx-colors, light-orange);
+  border: 1px solid black;
   border-radius: 5px;
-  margin: 0;
+  margin-right: 10px;
   font-size: 14px;
-  color: map-get($ucx-colors, light-orange);
-
+  color: black;
+  cursor: pointer;
   &:hover {
-    background: map-get($ucx-colors, light-orange);
+    background: black;
     color: white;
   }
 }
@@ -16,8 +16,8 @@
 .header {
   flex-direction: column;
   background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,82,8,1) 60%, rgba(190,30,2,1) 76%);
-
+  //background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,82,8,1) 60%, rgba(190,30,2,1) 76%);
+  background: linear-gradient(45deg, rgb(45, 11, 30) 0%, rgb(45, 11, 30) 49%,rgb(78, 19, 25) 49%, rgb(78, 19, 25) 67%,rgb(111, 27, 19) 67%, rgb(111, 27, 19) 76%,rgb(143, 36, 14) 76%, rgb(143, 36, 14) 81%,rgb(176, 44, 8) 81%, rgb(176, 44, 8) 82%,rgb(209, 52, 3) 82%, rgb(209, 52, 3) 100%);
   .header-top {
     height: 60px;
     align-items: center;
@@ -26,6 +26,7 @@
       .header-logo {
         height: 100%;
         width: 250px;
+        margin-left: 6px;
       }
 
     }
@@ -60,7 +61,9 @@
         @include mobile{
           color: black;
         }
-        padding-right: 100px;
+        padding-right: 80px;
+        border: 3px solid transparent;
+        text-align: center;
 
         &:hover {
           background: none;
