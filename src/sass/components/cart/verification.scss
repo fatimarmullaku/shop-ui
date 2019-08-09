@@ -1,8 +1,8 @@
-.main-container{
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-}
+//.main-container{
+//  display: flex;
+//  flex-direction: column;
+//  overflow: scroll;
+//}
 
 .step-buttons a:first-child{
     background-color: map_get($ucx-colors, light-orange)

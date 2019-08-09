@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  ::-webkit-scrollbar{
-    width: 0;
-  }
 }
 
 .sub-info{
