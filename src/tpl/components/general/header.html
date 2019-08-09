@@ -3,7 +3,9 @@
     <div class="header-top uses-flex between-space">
         <a href="home.html">
             <div class="image-container">
-                <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">
+<!--                <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">-->
+                <img src="{{imageSRC}}ucx-logo-desktop.png" alt="logo" class="header-logo is-hidden-mobile">
+                <img src="{{imageSRC}}ucx-logo-mobile.png" alt="logo" class="header-logo is-hidden-desktop">
             </div>
         </a>
         <div class="auth-buttons is-hidden-mobile">
@@ -24,9 +26,9 @@
             <a href="" class="navbar-item">News</a>
 <!------------------------------------PUBLISHER DROPDOWN----------------------------------------->
             <div class="navbar-item has-dropdown is-hoverable">
-                <a href="" class="navbar-link">Publishers</a>
+                <a href="" class="navbar-link" style="background: none">Publishers</a>
 
-                <div class="navbar-dropdown publisher-dropdown">
+                <div class="navbar-dropdown publisher-dropdown" style="margin-left: -20px">
                     <div class="columns navbar-item is-mobile is-multiline publisher-column-container">
                         <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
                             <img src="assets/img/activision-dd.png"  alt="">
@@ -55,7 +57,7 @@
 <!-------------------------------MORE DROPDOWN--------------------------------->
             <div class="navbar-item has-dropdown is-hoverable" >
 
-                <a class="navbar-link" >
+                <a class="navbar-link" style="background: none">
                     More
                 </a>
 
