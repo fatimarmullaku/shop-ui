@@ -45,16 +45,32 @@
     nav {
       width: 100%;
       justify-content: center;
-      background: transparent;
-
+      color: black;
+      @include desktop{
+        background: transparent ;
+      }
+      @include mobile{
+        margin-top: -20px;
+      }
+      .navbar-dropdown a{
+        color: black;
+      }
       a {
         color: pink;
+        @include mobile{
+          color: black;
+        }
         padding-right: 100px;
 
         &:hover {
           background: none;
           border-bottom: 3px solid red;
         }
+      }
+
+      a.see-more-publishers{
+        color: black;
+        border: none;
       }
     }
 
@@ -144,3 +160,5 @@
   max-height: 300px;
   max-width: 300px;
 }
+
+
