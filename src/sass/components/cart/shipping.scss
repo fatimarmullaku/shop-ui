@@ -40,6 +40,7 @@ label.checkout-label {
 }
 
 .shipping-form-container {
+  margin-left: 30px;
   padding:1vh;
 }
 
@@ -91,4 +92,9 @@ label.checkout-label {
   margin-right:0;
   background:yellow;
 
+}
+.shipping-wrapper{
+  padding: 40px;
+  border: 1px solid map_get($ucx-colors,deep-orange);
+  border-radius: 5px;
 }
