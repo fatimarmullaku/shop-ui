@@ -2,20 +2,23 @@
   margin-top: 70px;
   width: 910px;
   min-height: 430px;
-  background-color: map_get($ucx-colors, dark-gray);
+  //background-color: map_get($ucx-colors, dark-gray);
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 20px 50px;
   border: 1px solid orange;
   border-radius: 4px;
+  background: repeating-linear-gradient(45deg, rgb(45, 11, 30) 0%, rgb(45, 11, 30) 49%,rgb(78, 19, 25) 49%, rgb(78, 19, 25) 67%,rgb(111, 27, 19) 67%, rgb(111, 27, 19) 76%,rgb(143, 36, 14) 76%, rgb(143, 36, 14) 81%,rgb(176, 44, 8) 81%, rgb(176, 44, 8) 82%,rgb(209, 52, 3) 82%, rgb(209, 52, 3) 100%);
+
 }
 .forgot-password-wrap {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  //height: 100vh;
   //background: url(asset(images, 'signin_signup_bg.jpg')) center center no-repeat;
   //background-size: cover;
-  background:  linear-gradient(45deg, rgb(45, 11, 30) 0%, rgb(45, 11, 30) 49%,rgb(78, 19, 25) 49%, rgb(78, 19, 25) 67%,rgb(111, 27, 19) 67%, rgb(111, 27, 19) 76%,rgb(143, 36, 14) 76%, rgb(143, 36, 14) 81%,rgb(176, 44, 8) 81%, rgb(176, 44, 8) 82%,rgb(209, 52, 3) 82%, rgb(209, 52, 3) 100%);
+  //background: repeating-linear-gradient(45deg, rgb(45, 11, 30) 0%, rgb(45, 11, 30) 49%,rgb(78, 19, 25) 49%, rgb(78, 19, 25) 67%,rgb(111, 27, 19) 67%, rgb(111, 27, 19) 76%,rgb(143, 36, 14) 76%, rgb(143, 36, 14) 81%,rgb(176, 44, 8) 81%, rgb(176, 44, 8) 82%,rgb(209, 52, 3) 82%, rgb(209, 52, 3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
