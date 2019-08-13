@@ -1,17 +1,8 @@
-//.main-container{
-//  display: flex;
-//  flex-direction: column;
-//  overflow: scroll;
-//}
 
 .step-buttons a:first-child{
     background-color: map_get($ucx-colors, light-orange)
 
 }
-
-//.step-buttons a:nth-child(2){
-//  background-color: #f1f1f1;
-//}
 
 .shipping-infos{
     margin-left: 3px;
