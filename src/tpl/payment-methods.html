@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container">
-    <div class="checkout-steps-steps">
+    <div class="checkout-steps">
         <div class="step-buttons no-hover">
             <a href="checkout.html" class="button is-rounded is-hovered">1</a>
             <a href="shipping.html" class="button is-rounded is-hovered">2</a>
@@ -20,7 +20,7 @@
             <div class="border-container column is-4-desktop is-12-mobile">
                 <a id="img-paypal" href="#" class="payment-method-link">
                 <span class="category-icon">
-                    <img src="assets/img/paypal-logo-white.png" alt="">
+                    <img src="{{imageSRC}}paypal1.png" alt="">
                 </span><br>
                     <span class="payment-method-title">PAYPAL</span>
                 </a>
@@ -28,7 +28,7 @@
             <div class="column is-4-desktop is-12-mobile">
                 <a id="img-credit-card" href="#" class="payment-method-link">
                 <span class="category-icon">
-                    <img class="img-credit-card" src="assets/img/creditcard.png" alt="">
+                    <img class="img-credit-card" src="{{imageSRC}}creditcard1.png" alt="">
                 </span><br>
                     <span class="category-title">CREDIT CARD</span>
                 </a>
@@ -36,24 +36,19 @@
             <div class="column is-4-desktop is-12-mobile">
                 <a id="img-cash" href="#" class="payment-method-link">
                 <span class="category-icon">
-                    <img class="img-cash" src="assets/img/cash1.png" alt="">
+                    <img class="img-cash" src="{{imageSRC}}cash2.png" alt="">
                 </span><br>
                     <span class="category-title">CASH</span>
                 </a>
             </div>
         </div>
 
-    <div class="columns back-next-buttons">
-        <div class="column is-12-desktop is-12-mobile left-button has-text-centered">
-            <a href="shipping.html" class="button ">Previous</a>
+        <div class="columns back-next-buttons">
+            <div class="column is-12-desktop is-12-mobile left-button has-text-centered">
+                <a href="shipping.html" class="button ">Previous</a>
+            </div>
         </div>
     </div>
-
-
-    </div>
 </div>
-    {% endblock %}
+{% endblock %}
 
-
-
-onclick

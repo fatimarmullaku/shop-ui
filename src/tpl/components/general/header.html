@@ -1,47 +1,62 @@
 <div class="header uses-flex">
-
     <!-- HEADER TOP STARTS HERE -->
     <div class="header-top uses-flex between-space">
-
-        <div class="image-container">
-            <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">
-        </div>
-
+        <a href="home.html">
+            <div class="image-container">
+                <img src="{{imageSRC}}logo-ucx-wix.png" alt="logo" class="header-logo">
+            </div>
+        </a>
         <div class="auth-buttons is-hidden-mobile">
             <button class="log-out-button">Sign up</button>
             <button class="log-out-button">Login</button>
         </div>
-
         <div class="hamburger-menu-container is-hidden-tablet">
             <button>
                 <i class="fa"></i>
             </button>
         </div>
-
     </div>
-    <!-- HEADER TOP ENDS HERE -->
-
-    <!-- HEADER BOTTOM STARTS HERE -->
+<!--------------------------------HEADER 2---------------------------------->
     <div class="header-bottom uses-flex">
-
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-
-            <a href="" class="is-hidden-tablet">Sign up</a>
-            <a href="" class="is-hidden-tablet">Login</a>
-
+        <nav class="navbar navbar-container" role="navigation" aria-label="main navigation">
             <a href="index.html" class="navbar-item">Home</a>
+            <a href="" class="navbar-item">Accesories</a>
+            <a href="" class="navbar-item">News</a>
+<!------------------------------------PUBLISHER DROPDOWN----------------------------------------->
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a href="" class="navbar-link">Publishers</a>
 
-            <a href="" class="navbar-item">Menu 1</a>
-
-            <a href="" class="navbar-item">Menu 2</a>
-
-            <a href="" class="navbar-item">Menu 3</a>
-
+                <div class="navbar-dropdown publisher-dropdown">
+                    <div class="columns navbar-item is-mobile is-multiline publisher-column-container">
+                        <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
+                            <img src="assets/img/activision-dd.png"  alt="">
+                        </div>
+                        <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
+                            <img src="assets/img/sega-dd.png" alt="">
+                        </div>
+                        <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
+                            <img src="assets/img/ea-dd.png" alt="">
+                        </div>
+                        <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
+                            <img src="assets/img/rockstar-dd.png" alt="">
+                        </div>
+                        <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
+                            <img src="assets/img/ubisoft-dd.png" alt="">
+                        </div>
+                        <div class="column is-4-desktop is-4-mobile dropdown-publisher-container">
+                            <img src="assets/img/netherrealm-dd.png" alt="">
+                        </div>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="#" class="see-more-publishers">See more..</a>
+                    </div>
+                </div>
+            </div>
+<!-------------------------------MORE DROPDOWN--------------------------------->
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
                     More
                 </a>
-
                 <div class="navbar-dropdown">
                     <a class="navbar-item">
                         About
@@ -58,11 +73,8 @@
                     </a>
                 </div>
             </div>
+            <a href="" class="navbar-item is-hidden-tablet">Sign up</a>
+            <a href="" class="navbar-item is-hidden-tablet">Log in</a>
         </nav>
     </div>
-
-
-</div>
-<!-- HEADER BOTTOM ENDS HERE -->
-
 </div>

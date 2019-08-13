@@ -15,10 +15,11 @@
 
 .header {
   flex-direction: column;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,82,8,1) 60%, rgba(190,30,2,1) 76%);
 
   .header-top {
-    height: 80px;
-    border-bottom: 2px solid green;
+    height: 60px;
     align-items: center;
 
     .image-container {
@@ -41,14 +42,40 @@
 
   .header-bottom {
     justify-content: center;
-
     nav {
       width: 100%;
       justify-content: center;
+      color: black;
+      @include desktop{
+        background: transparent ;
+      }
+      @include mobile{
+        margin-top: -20px;
+      }
+      .navbar-dropdown a{
+        color: black;
+      }
+      a {
+        color: pink;
+        @include mobile{
+          color: black;
+        }
+        padding-right: 100px;
+
+        &:hover {
+          background: none;
+          border-bottom: 3px solid red;
+        }
+      }
+
+      a.see-more-publishers{
+        color: black;
+        border: none;
+      }
     }
 
     @include mobile {
-      height: calc(100vh - 80px);
+      height: calc(100vh - 60px);
       display: none;
       position: absolute;
       width: 100%;
@@ -98,3 +125,40 @@
 .between-space {
   justify-content: space-between;
 }
+
+
+// PUBLISHER DROPDOWN SCSS============================
+.publisher-dropdown{
+  width: 368px;
+  cursor: pointer;
+  .publisher-column-container{
+    @include mobile{
+      margin: -20px;
+    }
+    .dropdown-publisher-container{
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 10px;
+      padding: 0px;
+      text-align: center;
+      &:hover{
+        background: map_get($ucx-colors,light-gray);
+      }
+      img{
+        margin-top: 5px;
+        height: 90px;
+        width: 90px;
+      }
+
+    }
+  }
+}
+
+.navbar-item img{
+  text-align: center;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+
