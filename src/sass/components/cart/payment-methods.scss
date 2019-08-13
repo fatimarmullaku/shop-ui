@@ -1,3 +1,6 @@
+html{
+  background-color: #0a0a0a;
+}
 .sub-info{
   color: #FF5A09;
   font-size: x-large;
@@ -17,15 +20,13 @@
   }
   text-align: left;
 }
-.checkout-steps{
-  margin: 25px;
-}
+
 .back-next-buttons{
   margin-top: 15px;
 }
 .payment-container {
   border: 1px solid map_get($ucx-colors, deep-orange);
-  background: #fff;
+  background: #0a0a0a;
   margin: 40px 30px;
   padding: 20px 20px;
   background: map_get($ucx-colors,dark-gray);
@@ -66,8 +67,8 @@
       height: 230px;
       padding: 40px;
 
+      }
     }
-  }
   }
 
 
