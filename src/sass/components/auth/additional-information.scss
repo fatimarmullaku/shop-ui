@@ -1,5 +1,9 @@
 .forgot-password-screen {
+  @include mobile{
+    margin: 10px;
+  }
   margin-top: 70px;
+  margin-bottom: 40px;
   width: 910px;
   min-height: 430px;
   //background-color: map_get($ucx-colors, dark-gray);
@@ -13,6 +17,9 @@
 
 }
 .forgot-password-wrap {
+  @include mobile{
+    width: 100%;
+  }
   width: 100%;
   height: 100%;
   //height: 100vh;
@@ -47,8 +54,34 @@
   font-weight: 300;
   cursor: pointer;
   border-radius: 3px;
-
+#removeaddress,#removephone{
+  margin-right: 5px;
+}
   &:hover {
     background: map-get($ucx-colors, deep-orange);
+  }
+}
+
+.delete-phone-number{
+  button{
+    width: 100%;
+  }
+  text-align: center;
+}
+
+.add-field-button{
+  @include mobile{
+    width: 100%;
+    color: white;
+    background: map_get($ucx-colors,deep-orange);
+  }
+  float: right;
+  margin: 10px 0;
+  background: transparent;
+  border: 1px solid map_get($ucx-colors,deep-orange);
+  color: map_get($ucx-colors,deep-orange);
+  &:hover{
+    background: map_get($ucx-colors,deep-orange);
+    color: white;
   }
 }
