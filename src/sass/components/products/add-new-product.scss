@@ -5,8 +5,13 @@
   .add-new-product-wrapper{
     background-color: map-get($ucx-colors,dark-gray);
     border: 1px solid map-get($ucx-colors,deep-orange);
+    @include desktop{
+      width: 65%;
+    }
+    width: 90%;
     border-radius: 6px;
-    margin: 30px;
+    margin: 30px  auto;
+
     min-height: calc(100vh - 140px);
 
     .title{
@@ -37,6 +42,9 @@
         align-items: center;
         position: relative;
         height: calc(100vh - 250px);
+        .file-label{
+          margin: 0 auto;
+        }
 
         img {
           max-width: 300px;
@@ -44,10 +52,16 @@
       }
 
       .product-info-panel{
-        .input{
-          width: 80%;
-        }
         padding: 15px;
+        .select,select{
+          width: 100%;
+        }
+        .checkbox{
+          margin-right: 30px;
+          input{
+            margin-right: 5px;
+          }
+        }
       }
     }
   }

@@ -58,12 +58,23 @@
                         <div class="columns">
                             <div class="column">
                                 <label class="label">Platform</label>
-                                <div class="select">
-                                    <select>
-                                        <option>XBOX</option>
-                                        <option>Play Station</option>
-                                        <option value="others">Others</option>
-                                    </select>
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="foobar">
+                                        XBOX
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="foobar" checked>
+                                        Play Station
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="foobar" checked>
+                                        Windows
+                                    </label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="foobar" checked>
+                                        Nintendo
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -73,13 +84,21 @@
                                 <label class="label">Publisher</label>
                                 <div class="select">
                                     <select>
-                                        <option>Select</option>
-                                        <option>With options</option>
-                                        <option>Others</option>
+                                        <option>Rockstar Games</option>
+                                        <option>Activision</option>
+                                        <option>Valve</option>
+                                        <option value="">Other</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
+                        <div class="columns">
+                            <div class="column">
+                                <label class="label">Publisher Name</label>
+                                <input type="text" class="input" value="">
+                            </div>
+                        </div>
+
 
                 <div class="field is-grouped is-grouped-right">
                     <button class="button is-primary save-button">Save</button>
