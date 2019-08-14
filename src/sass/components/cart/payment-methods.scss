@@ -18,14 +18,14 @@
   text-align: left;
 }
 .checkout-steps{
-  margin-top: 25px;
+  margin: 25px;
 }
 .back-next-buttons{
   margin-top: 15px;
 }
 .payment-container {
   border: 1px solid map_get($ucx-colors, deep-orange);
-  background: #fff;
+  background: #0a0a0a;
   margin: 40px 30px;
   padding: 20px 20px;
   background: map_get($ucx-colors,dark-gray);
@@ -66,8 +66,8 @@
       height: 230px;
       padding: 40px;
 
+      }
     }
-  }
   }
 
 
