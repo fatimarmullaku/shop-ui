@@ -74,21 +74,4 @@
     </div>
 </div>
 
-<script>
-    var addaddress = document.getElementById("addaddress");
-    addaddress.addEventListener("click", function() {
-        var boxes = document.getElementById("box-address");
-        var clone = boxes.firstElementChild.cloneNode(true);
-        boxes.appendChild(clone);
-    });
-
-
-    var addphone = document.getElementById("addphone");
-    addphone.addEventListener("click", function() {
-        var boxes = document.getElementById("box-phone");
-        var clone = boxes.firstElementChild.cloneNode(true);
-        boxes.appendChild(clone);
-    });
-</script>
-
 {% endblock %}

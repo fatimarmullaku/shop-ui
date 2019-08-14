@@ -1,5 +1,4 @@
 var slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -27,21 +26,27 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
-$(document).ready(function(){
-    $(".slideshow-container").mouseenter(function(){
-        $(".game-information-container").fadeIn("slow");
-        $(".image-slider").animate({
-            opacity : 0.3
-        }, "slow")
-    });
-    $(".slideshow-container").mouseleave(function(){
-        $(".image-slider").animate({
-            opacity : 1
-        },"slow");
-        $(".game-information-container").fadeOut("slow");
-    });
+$(document).ready(function () {
+
+    if ($(".slideshow-container").length) {
+        showSlides(slideIndex);
+
+        $(".slideshow-container").mouseenter(function () {
+            $(".game-information-container").fadeIn("slow");
+            $(".image-slider").animate({
+                opacity: 0.3
+            }, "slow")
+        });
+
+        $(".slideshow-container").mouseleave(function () {
+            $(".image-slider").animate({
+                opacity: 1
+            }, "slow");
+            $(".game-information-container").fadeOut("slow");
+        });
+    }
 });
