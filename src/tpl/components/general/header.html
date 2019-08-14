@@ -8,11 +8,46 @@
                 <img src="{{imageSRC}}ucx-logo-mobile.png" alt="logo" class="header-logo is-hidden-desktop">
             </div>
         </a>
-        <div class="auth-buttons is-hidden-mobile">
-            <button class="log-out-button">Sign up</button>
-            <button class="log-out-button">Login</button>
+
+        <div class="columns right-buttons is-hidden-mobile is-hidden-tablet-only">
+                                <!--      CART ICON       -->
+            <div class="column is-6 dropdown dropdown-cart is-right is-large">
+                <div class="dropdown-trigger">
+                    <button class="button cart-button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span><i class="fab fa-opencart"></i></span>
+                        <span class="is-medium cart-nr">0</span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu-2" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item sign-up-button">Sign Up</a>
+                        <a href="#" class="dropdown-item sign-up-button">Login</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-6 dropdown dropdown-profile is-right is-large">
+            <div class="dropdown-trigger">
+                <button class="button user-button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span><i class="fas fa-user-alt "></i></span>
+                    <span class="icon is-medium">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item sign-up-button">Sign Up</a>
+                    <a href="#" class="dropdown-item sign-up-button">Login</a>
+                </div>
+            </div>
         </div>
-        <div class="hamburger-menu-container is-hidden-tablet">
+    </div>
+
+
+
+        <div class="hamburger-menu-container is-hidden-desktop ">
             <button>
                 <i class="fa"></i>
             </button>

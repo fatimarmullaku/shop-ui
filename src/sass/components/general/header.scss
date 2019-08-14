@@ -1,3 +1,4 @@
+
 .log-out-button {
   background: transparent;
   padding: 10px 25px;
@@ -13,6 +14,7 @@
   }
 }
 .header {
+  margin-bottom: 20px;
   flex-direction: column;
   background: rgb(0,0,0);
   background: linear-gradient(225deg, #2d0b1e 0%, #2d0b1e 39%, #4e1319 35%, #4e1319 49%, #6f1b13 44%, #6f1b13 58%, #8f240e 54%, #8f240e 68%, #b02c08 67%, #b02c08 78%, #d13403 68%, #d13403 100%);
@@ -20,6 +22,27 @@
     background: linear-gradient(225deg, #2d0b1e 11%, #2d0b1e 24%, #4e1319 13%, #4e1319 47%, #6f1b13 21%, #6f1b13 65%, #8f240e 56%, #8f240e 77%, #b02c08 72%, #b02c08 86%, #d13403 77%, #d13403 100%);
   }
   .header-top {
+    .right-buttons{
+      margin-right: 20px;
+      margin-top: 20px;
+
+      a.sign-up-button{
+        &:hover{
+          background-color: map_get($ucx-colors,light-gray);
+        }
+      }
+      .user-button ,.cart-button{
+          border: none;
+          background-color: transparent;
+          color: white;
+        span.cart-nr{
+          margin-left: 5px;
+        }
+      }
+
+
+
+    }
     height: 60px;
     align-items: center;
     .image-container {
@@ -27,6 +50,7 @@
         @include mobile{
           margin-left: 3px;
           margin-top: 9px;
+          margin-bottom: 0;
         }
         height: 100%;
         width: 180px;
