@@ -5,7 +5,6 @@
 
 <div class="add-new-product-container">
     <div class="add-new-product-wrapper">
-
         <div class="title">
             <h2>Add new product</h2>
         </div>
@@ -13,97 +12,58 @@
             <div class="column is-two-fifths">
                 <div class="product-view-panel">
                     <form action="">
-                        <img src="assets/img/mortal-kombat.jpg" alt="">
-                        <div class="file is-black   ">
-                            <label class="file-label">
-                                <input class="file-input" type="file" name="resume">
-                                <span class="file-cta">
-                                <span class="file-icon">
-                                    <i class="fas fa-upload"></i>
-                                </span>
-                                <span class="file-label">
-                                    Choose a photo…
-                                </span>
-                            </span>
-                            </label>
+                        <div class="image-upload-container">
+                            <input type="file" class="upload-image">
+                            <i class="fas fa-camera"></i>
                         </div>
+<!--                        <img src="assets/img/mortal-kombat.jpg" alt="">-->
                     </form>
                 </div>
             </div>
             <div class="column">
                 <div class="product-info-panel">
-
                     <form action="">
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">Name</label>
-                                <input type="text" class="input" value="">
-                            </div>
+                        <label class="label">Name</label>
+                        <input type="text" class="input" value="">
+                        <label class="label">Unit Price</label>
+                        <input type="number" class="input" value="">
+                        <label class="label">In Stock</label>
+                        <input type="number" class="input" value="">
+                        <label class="label">Platform</label>
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox" name="foobar">
+                                XBOX
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="foobar" checked>
+                                Play Station
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="foobar" checked>
+                                Windows
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="foobar" checked>
+                                Nintendo
+                            </label>
                         </div>
 
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">Unit Price</label>
-                                <input type="number" class="input" value="">
-                            </div>
+                        <label class="label">Publisher</label>
+                        <div class="select">
+                            <select>
+                                <option>Rockstar Games</option>
+                                <option>Activision</option>
+                                <option>Valve</option>
+                                <option value="">Other</option>
+                            </select>
                         </div>
-
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">In Stock</label>
-                                <input type="number" class="input" value="">
-                            </div>
+                        <label class="label">Publisher Name</label>
+                        <input type="text" class="input" value="">
+                        <div class="save-cancel-buttons field is-grouped is-grouped-right" >
+                            <button class="button is-primary save-button">Save</button>
+                            <button class="button">Cancel</button>
                         </div>
-
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">Platform</label>
-                                <div class="control">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="foobar">
-                                        XBOX
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="foobar" checked>
-                                        Play Station
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="foobar" checked>
-                                        Windows
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="foobar" checked>
-                                        Nintendo
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">Publisher</label>
-                                <div class="select">
-                                    <select>
-                                        <option>Rockstar Games</option>
-                                        <option>Activision</option>
-                                        <option>Valve</option>
-                                        <option value="">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">Publisher Name</label>
-                                <input type="text" class="input" value="">
-                            </div>
-                        </div>
-
-
-                <div class="field is-grouped is-grouped-right">
-                    <button class="button is-primary save-button">Save</button>
-                    <button class="button">Cancel</button>
-                </div>
                     </form>
 
                 </div>
