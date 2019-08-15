@@ -28,8 +28,12 @@
         position: relative;
         height: calc(100vh - 250px);
 
-        img{
-          max-width: 300px;
+        .image-container{
+
+          img{
+            object-fit: contain;
+            max-height: calc(100vh - 270px);
+          }
         }
 
         .review-panel{
