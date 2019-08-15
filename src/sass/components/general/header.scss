@@ -7,7 +7,7 @@
   font-size: 14px;
   color: map_get($ucx-colors, deep-orange);
   cursor: pointer;
-//adjhf
+  //adjhf
   &:hover {
     background: map_get($ucx-colors, deep-orange);
     color: white;
@@ -40,18 +40,29 @@
         color: white;
 
         span.cart-nr {
-          color:map_get($ucx-colors,deep-orange);
+          color: map_get($ucx-colors, deep-orange);
           margin-left: 5px;
         }
       }
 
-      .dropdown-menu{
+      .dropdown-menu {
         z-index: 90;
+
         .dropdown-item {
           width: 400px;
+
         }
-        .item-desc{
+
+        .item-desc {
           display: block;
+
+          a {
+            color: #0a0a0a;
+          }
+
+          a:hover {
+            color: map_get($ucx-colors, deep-orange);
+          }
         }
       }
     }
@@ -131,9 +142,9 @@
       }
     }
 
-    .more-navbar{
+    .more-navbar {
 
-      a:nth-child(8){
+      a:nth-child(8) {
         padding-right: 0;
         margin-right: 0;
       }
