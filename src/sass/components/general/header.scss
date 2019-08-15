@@ -40,11 +40,20 @@
         color: white;
 
         span.cart-nr {
+          color:map_get($ucx-colors,deep-orange);
           margin-left: 5px;
         }
       }
 
-
+      .dropdown-menu{
+        z-index: 90;
+        .dropdown-item {
+          width: 400px;
+        }
+        .item-desc{
+          display: block;
+        }
+      }
     }
 
     height: 60px;
@@ -119,6 +128,14 @@
       top: 80px;
       a {
         display: block;
+      }
+    }
+
+    .more-navbar{
+
+      a:nth-child(8){
+        padding-right: 0;
+        margin-right: 0;
       }
     }
   }
