@@ -24,10 +24,19 @@
   }
 
   .header-top {
+    .dropdown-cart{
+      @include mobile{
+      }
+    }
+
     .right-buttons {
       margin-right: 20px;
       margin-top: 20px;
 
+      @include mobile{
+        display: flex;
+        flex-direction: row;
+      }
       a.sign-up-button {
         &:hover {
           background-color: map_get($ucx-colors, light-gray);
@@ -49,13 +58,15 @@
         z-index: 90;
 
         .dropdown-item {
-          width: 400px;
+          width: 350px;
+          @include mobile{
+            width: 250px;
+          }
 
         }
 
         .item-desc {
           display: block;
-
           a {
             color: #0a0a0a;
           }
