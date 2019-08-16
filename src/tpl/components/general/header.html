@@ -9,8 +9,9 @@
             </div>
         </a>
 
-        <div class="columns right-buttons is-hidden-mobile is-hidden-tablet-only">
-                                <!--      CART ICON       -->
+        <div class="columns right-buttons  is-hidden-tablet-only">
+
+            <!--      CART ICON       -->
             <div class="column is-6 dropdown dropdown-cart is-right is-large">
                 <div class="dropdown-trigger">
                     <button class="button cart-button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -20,14 +21,45 @@
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu-2" role="menu">
                     <div class="dropdown-content">
-                        <a href="#" class="dropdown-item sign-up-button">Sign Up</a>
-                        <a href="#" class="dropdown-item sign-up-button">Login</a>
+                        <div class="columns is-mobile dropdown-item dropdown-cart-item ">
+                            <div class="column is-4">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                                </figure>
+                            </div>
+                            <div class="column is-4 item-desc">
+                                <a href="#"><h6><strong>Mortal Kombat Xl</strong></h6></a>
+                                <h7>XBOX & PS4</h7>
+                            </div>
+                            <div class="column is-4 has-text-right">
+                                <a href="#"><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="columns is-mobile dropdown-item ">
+                            <div class="column is-4">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                                </figure>
+                            </div>
+                            <div class="column is-4 item-desc">
+                                <a href="#"><h6><strong>Mortal Kombat Xl</strong></h6></a>
+                                <h7>XBOX & PS4</h7>
+                            </div>
+                            <div class="column is-4 has-text-right">
+                                <a href="#"><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="dropdown-item proceed-checkout">
+                            <a href="cart-preview.html" class="button is-dark is-fullwidth">Proceed to checkout</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="column is-6 dropdown dropdown-profile is-right is-large">
+            <div class="column is-6 dropdown is-hidden-mobile dropdown-profile is-right is-large">
             <div class="dropdown-trigger">
                 <button class="button user-button" aria-haspopup="true" aria-controls="dropdown-menu">
                     <span><i class="fas fa-user-alt "></i></span>
@@ -44,6 +76,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 
@@ -90,7 +124,7 @@
                 </div>
             </div>
 <!-------------------------------MORE DROPDOWN--------------------------------->
-            <div class="navbar-item has-dropdown is-hoverable" >
+            <div class="navbar-item has-dropdown is-hoverable more-navbar" >
 
                 <a class="navbar-link" style="background: none">
                     More

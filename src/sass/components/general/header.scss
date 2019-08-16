@@ -7,7 +7,7 @@
   font-size: 14px;
   color: map_get($ucx-colors, deep-orange);
   cursor: pointer;
-//adjhf
+  //adjhf
   &:hover {
     background: map_get($ucx-colors, deep-orange);
     color: white;
@@ -24,10 +24,17 @@
   }
 
   .header-top {
+    .dropdown-cart{
+    }
+
     .right-buttons {
       margin-right: 20px;
       margin-top: 20px;
 
+      @include mobile{
+        display: flex;
+        flex-direction: row;
+      }
       a.sign-up-button {
         &:hover {
           background-color: map_get($ucx-colors, light-gray);
@@ -40,11 +47,33 @@
         color: white;
 
         span.cart-nr {
+          color: map_get($ucx-colors, deep-orange);
           margin-left: 5px;
         }
       }
 
+      .dropdown-menu {
+        z-index: 90;
 
+        .dropdown-cart-item {
+          width: 350px;
+          @include mobile{
+            width: 250px;
+          }
+
+        }
+
+        .item-desc {
+          display: block;
+          a {
+            color: #0a0a0a;
+          }
+
+          a:hover {
+            color: map_get($ucx-colors, deep-orange);
+          }
+        }
+      }
     }
 
     height: 60px;
@@ -119,6 +148,14 @@
       top: 80px;
       a {
         display: block;
+      }
+    }
+
+    .more-navbar {
+
+      a:nth-child(8) {
+        padding-right: 0;
+        margin-right: 0;
       }
     }
   }

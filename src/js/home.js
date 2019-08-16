@@ -31,9 +31,9 @@ function showSlides(n) {
 }
 
 $(document).ready(function () {
+    showSlides(slideIndex);
 
     if ($(".slideshow-container").length) {
-        showSlides(slideIndex);
 
         $(".slideshow-container").mouseenter(function () {
             $(".game-information-container").fadeIn("slow");
@@ -49,4 +49,20 @@ $(document).ready(function () {
             $(".game-information-container").fadeOut("slow");
         });
     }
+
+
+
+    $(".slideshow-container").pressure({
+        change:function (force, event){
+            console.log(force);
+            $(".image-slider,.image-slider-mobile").css('opacity', 1 - force + 0.25);
+            $(".game-information-container").fadeIn("slow");
+
+        },
+        end: function(){
+            console.log('end');
+            $(".image-slider,.image-slider-mobile").css('opacity',1);
+            $(".game-information-container").fadeOut("slow");
+        }
+    });
 });
