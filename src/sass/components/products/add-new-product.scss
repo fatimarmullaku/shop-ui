@@ -39,9 +39,32 @@
       .product-view-panel {
         display: flex;
         justify-content: center;
-        align-items: center;
         position: relative;
         height: calc(100vh - 250px);
+        .image-upload-container{
+          width: 270px;
+          height: 335px;
+          border: 2px dotted #FF5A09;
+          border-radius: 9px;
+          margin-top: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .upload-image{
+            cursor: pointer;
+            position:absolute;
+            z-index: 99;
+            opacity: 0;
+          }
+          i{
+            font-size: 50px;
+          }
+          .upload-image:hover + i{
+            color: map_get($ucx-colors,deep-orange);
+            font-size: 80px;
+            transition: 1s;
+          }
+        }
         .file-label{
           margin: 0 auto;
         }
@@ -61,6 +84,9 @@
           input{
             margin-right: 5px;
           }
+        }
+        .save-cancel-buttons{
+          margin-top: 20px;
         }
       }
     }
